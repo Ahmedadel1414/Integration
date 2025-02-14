@@ -20,28 +20,28 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Integration - Your Trusted Financial Partner",
-  description: "Integration offers expert brokerage services, real-time market insights, and investment strategies to help you grow your wealth.",
+  title: "انتجريشن - شريكك الموثوق في الوساطة المالية",
+  description: "تقدم انتجريشن خدمات الوساطة المتخصصة، وتحليلات السوق المباشرة، واستراتيجيات الاستثمار لمساعدتك في تنمية ثروتك.",
   openGraph: {
-    title: "Integration - Your Trusted Financial Partner",
-    description: "Expert brokerage services with real-time market insights and investment strategies.",
+    title: "انتجريشن - شريكك الموثوق في الوساطة المالية",
+    description: "خدمات وساطة متخصصة مع تحليلات السوق المباشرة واستراتيجيات الاستثمار",
     url: "https://integration-swart.vercel.app",
-    siteName: "Integration",
+    siteName: "انتجريشن",
     images: [
       {
-        url: "/images/og-image.jpg", // Replace with your image path
+        url: "/images/og-image.jpg",
         width: 1200,
         height: 630,
-        alt: "Integration Brokerage Office",
+        alt: "مكتب انتجريشن للوساطة",
       },
     ],
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Integration - Your Trusted Financial Partner",
-    description: "Leading brokerage services with expert financial guidance.",
-    images: ["/images/twitter-card.jpg"], // Replace with your image path
+    title: "انتجريشن - شريكك الموثوق في الوساطة المالية",
+    description: "خدمات وساطة رائدة مع توجيه مالي متخصص",
+    images: ["/images/twitter-card.jpg"],
   },
 };
 
