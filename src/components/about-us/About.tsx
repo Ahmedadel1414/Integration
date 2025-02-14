@@ -12,7 +12,7 @@ const About = () => {
       <div>
         <Cards />
         <div>
-          <h2 className="m-auto text-center text-5xl font-semibold py-5">
+          <h2 className="m-auto text-center text-3xl sm:text-5xl font-semibold py-5 leading-normal">
             أنواع التأمين بالسوق المصري
           </h2>
           <div className="text-center bg-white border border-gray-200 p-10 rounded-lg shadow-lg shadow-zinc-300 my-12">

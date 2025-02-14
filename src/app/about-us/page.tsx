@@ -5,7 +5,7 @@ const page = () => {
   return (
     <section className="pb-10">
       <div className="relative -z-50 bg-[url(/assets/home-imgs/hero.jpg)] filter w-full bg-cover bg-fixed px-0 py-[150px]">
-        <div className="bg-black w-full h-full top-0 left-0 absolute -z-40 opacity-70"></div>
+        <div className="bg-black w-full h-full top-0 left-0 absolute -z-40 opacity-60"></div>
         <span>
           <h1 className="m-auto text-center text-4xl font-semibold pt-5 xs:text-5xl text-white">
             الرؤية و الأهداف

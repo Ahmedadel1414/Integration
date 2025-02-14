@@ -3,12 +3,15 @@ import ContactForm from "./ContactForm";
 
 const Contact = () => {
   return (
-    <section className="pt-10 bg-gray-100">
+    <section className="pt-10">
       <div className="container">
         <h2 className="m-auto text-center text-5xl font-semibold pb-5">
           تواصل معنا
         </h2>
         <div className="flex flex-col gap-10 lg:flex-row mt-10 pb-10">
+          <div className="w-full">
+            <ContactForm />
+          </div>
           <Image
             src="/assets/home-imgs/hero.jpg"
             alt="hero"
@@ -16,9 +19,6 @@ const Contact = () => {
             height={450}
             className="border rounded-xl min-w-full max-h-[430px] lg:min-w-[450px] xl:min-w-[550px]"
           />
-          <div className="w-full">
-            <ContactForm />
-          </div>
         </div>
       </div>
     </section>

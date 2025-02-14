@@ -8,7 +8,7 @@ const page = () => {
     <>
       <section>
         <div className="relative -z-50 bg-[url(/assets/home-imgs/hero.jpg)] filter w-full bg-cover bg-fixed px-0 py-[150px]">
-          <div className="bg-black w-full h-full top-0 left-0 absolute -z-40 opacity-70"></div>
+          <div className="bg-black w-full h-full top-0 left-0 absolute -z-40 opacity-60"></div>
           <span>
             <h1 className="m-auto text-center text-4xl font-semibold pt-5 xs:text-5xl text-white">
               الرؤية و الأهداف
@@ -31,7 +31,7 @@ const page = () => {
             <Cards />
           </div>
           <div className="py-5">
-            <h2 className="m-auto text-center text-5xl font-semibold py-5">
+            <h2 className="m-auto text-center text-3xl sm:text-5xl font-semibold py-5 leading-normal">
               أنواع التأمين بالسوق المصري
             </h2>
             <div className="grid grid-cols-[repeat(auto-fill,minmax(230px,1fr))] w-full gap-10 py-10 sm:grid-cols-[repeat(auto-fill,minmax(460px,1fr))]">
@@ -47,10 +47,10 @@ const page = () => {
                     height={500}
                     className="min-w-full"
                   />
-                  <h3 className="mx-auto text-xl font-semibold py-5">
+                  <h3 className="mx-auto text-xl font-semibold py-5 text-center px-2">
                     {insurance.insuranceTitle}
                   </h3>
-                  <p className="text-center pb-12 px-10">
+                  <p className="text-center pb-12 px-10 leading-7">
                     {insurance.insuranceDescription}
                   </p>
                 </div>

@@ -11,24 +11,21 @@ const Header = () => {
           <span className="flex items-center">
             <Link
               href="/"
-              className="inline-block text-primary text-2xl font-bold xs:text-3xl xs:font-black"
+              className="flex items-center text-primary text-2xl font-bold xs:text-3xl xs:font-black"
             >
               INTEGRATION
+              <Image
+                src="/assets/logos/logo.PNG"
+                alt="logo"
+                width={60}
+                height={60}
+                className="inline-block w-12 h-12 mx-3 xm:w-14 xm:h-14 mix-blend-multiply"
+                loading="eager"
+              />
             </Link>
-            <Image
-              src="/assets/logos/logo.PNG"
-              alt="logo"
-              width={60}
-              height={60}
-              className="inline-block w-12 h-12 mx-3 xm:w-14 xm:h-14 mix-blend-multiply"
-            />
           </span>
-          <span className="hidden md:flex">
-            <Nav />
-          </span>
-          <span className="md:hidden">
-            <MobileNav />
-          </span>
+          <Nav />
+          <MobileNav />
         </div>
       </header>
     </>

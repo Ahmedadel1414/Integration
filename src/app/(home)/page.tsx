@@ -4,7 +4,7 @@ import Hero from "@/features/hero/Hero";
 import InsuranceTypes from "@/features/insurance-types/InsuranceTypes";
 import OurServices from "@/features/our-services/OurServices";
 
-const page = () => {
+const Home = () => {
   return (
     <>
       <Hero />
@@ -16,4 +16,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Home;

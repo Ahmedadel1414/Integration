@@ -12,15 +12,14 @@ const Hero = () => {
             alt="hero"
             width={1920}
             height={1080}
-            className="h-screen filter brightness-50 bg-cover"
+            className="h-screen filter brightness-50 object-cover"
+            loading="eager"
           />
         </div>
         <div className="container flex flex-col justify-center items-center h-full text-center text-white">
           <div>
-            <h1 className="text-4xl font-bold mb-6 sm:text-6xl leading-10">
-              حلول تأمينية موثوقة
-              <br />
-              لحماية مستقبلك
+            <h1 className="text-4xl font-bold mb-6 max-w-[600px] sm:text-6xl !leading-snug">
+              حلول تأمينية موثوقة لحماية مستقبلك
             </h1>
 
             <p className="text-2xl mb-6">
