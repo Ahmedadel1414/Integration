@@ -14,13 +14,13 @@ export default {
         padding: "2rem",
       },
       backgroundColor: {
-        primary: "#2362eb",
-        secondary: "",
+        primary: "#0e4ba1",
+        secondary: "#3ab5b5",
         danger: "",
       },
       colors: {
-        primary: "#2362eb",
-        secondary: "",
+        primary: "#0e4ba1",
+        secondary: "#3ab5b5",
         danger: "",
       },
       textColor: {},

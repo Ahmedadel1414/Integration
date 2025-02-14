@@ -13,8 +13,8 @@ const Nav = () => {
         {navBarr.map((section, index) => (
           <li
             key={index}
-            className={`hover:text-primary ${
-              pathname == `/${section.url}` && "text-primary font-bold"
+            className={`hover:text-secondary ${
+              pathname == `/${section.url}` && "text-secondary font-bold"
             }`}
           >
             <Link href={`/${section.url}`}>{section.section}</Link>

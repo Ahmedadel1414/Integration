@@ -1,6 +1,6 @@
 import InsuranceCardsContainer from "@/components/cards/InsuranceCardsContainer";
-import Link from "next/link";
 import { insuranceCategories } from "@/constants/insurance";
+import Link from "next/link";
 
 const InsuranceTypes = () => {
   return (

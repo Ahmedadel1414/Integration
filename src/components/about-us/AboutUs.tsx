@@ -1,6 +1,5 @@
 import { introduction1, introduction2 } from "@/constants/aboutUs";
 import Image from "next/image";
-import React from "react";
 
 type AboutUsProps = {
   displayHeading?: boolean;
@@ -37,7 +36,7 @@ const AboutUs = ({ displayHeading = true }: AboutUsProps) => {
             </div>
             <div className="order-1 lg:order-2 h-[300px] lg:h-auto relative">
               <Image
-                src="/assets/home-imgs/hero.jpg"
+                src="/assets/about-us-1.webp"
                 alt="Insurance brokerage services"
                 fill
                 className="object-cover"
@@ -51,7 +50,7 @@ const AboutUs = ({ displayHeading = true }: AboutUsProps) => {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
             <div className="h-[300px] lg:h-auto relative">
               <Image
-                src="/assets/home-imgs/hero.jpg"
+                src="/assets/about-us-2.webp"
                 alt="Insurance consulting"
                 fill
                 className="object-cover"

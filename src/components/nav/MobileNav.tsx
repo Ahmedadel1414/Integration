@@ -35,7 +35,7 @@ const MobileNav = () => {
             setIsHidden((prev) => !prev);
             document.body.style.overflow = "auto";
           }}
-          className="block absolute right-14 top-5 cursor-pointer text-gray-700 text-3xl hover:text-primary"
+          className="block absolute right-14 top-5 cursor-pointer text-gray-700 text-3xl hover:text-secondary"
           aria-label="exit burger menu"
         >
           X
@@ -49,8 +49,8 @@ const MobileNav = () => {
                   setIsHidden((prev) => !prev);
                   document.body.style.overflow = "auto";
                 }}
-                className={`mx-4 pb-10 hover:text-primary ${
-                  pathname == `/${section.url}` && "text-primary font-bold"
+                className={`mx-4 pb-10 hover:text-secondary ${
+                  pathname == `/${section.url}` && "text-secondary font-bold"
                 }`}
               >
                 <Link href={`/${section.url}`}>{section.section}</Link>

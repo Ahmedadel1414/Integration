@@ -10,7 +10,7 @@ const Footer = () => {
         <Link href={"/"}>
           <Image
             src="/assets/logos/integration.jpg"
-            alt="hero"
+            alt="Footer"
             width={200}
             height={200}
             className="pb-5 lg:pb-0 mix-blend-multiply"

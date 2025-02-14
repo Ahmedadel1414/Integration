@@ -1,13 +1,12 @@
 import Image from "next/image";
 import Link from "next/link";
-import React from "react";
 
 const Hero = () => {
   return (
     <section className="min-h-[calc(100vh-80px)] text-center text-white flex items-center justify-center flex-col">
       <div className="absolute -z-50 inset-0">
         <Image
-          src="/assets/home-imgs/hero.jpg"
+          src="/assets/home.webp"
           alt="hero"
           width={1920}
           height={1080}

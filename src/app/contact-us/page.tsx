@@ -9,7 +9,7 @@ const Page = () => {
 
         <div className="absolute inset-0 -z-50">
           <Image
-            src="/assets/contact.jpg"
+            src="/assets/contact.webp"
             width={1600}
             height={476}
             alt="Contact Us Section Image"
@@ -20,16 +20,15 @@ const Page = () => {
 
         <div className="space-y-8">
           <h1 className="m-auto text-center text-3xl font-semibold pt-5 xs:text-4xl sm:text-5xl text-white">
-            الرؤية و الأهداف
+            التواصل والدعم
           </h1>
           <div className="space-y-3">
             <p className="m-auto text-center text-base font-medium sm:text-xl md:text-2xl text-white">
-              - ان رؤيتنا هي شركات ناجحة مع عملائنا علي أساس متين من قيمتنا
-              المضافة, و الوصول الي حصة كبيرة من السوق المصري.
+              نحن هنا للإجابة على استفساراتكم وتقديم الدعم الذي تحتاجونه بكل
+              احترافية وسرعة.
             </p>
             <p className="m-auto text-center text-base font-medium sm:text-xl md:text-2xl text-white">
-              - أهدافنا هي التزامنا نحو تقديم أفضل مستويات الخدم’ التأمينية
-              بالسوق المصري.
+              لا تترددوا في التواصل معنا، فريقنا مستعد لمساعدتكم في أي وقت.
             </p>
           </div>
         </div>
