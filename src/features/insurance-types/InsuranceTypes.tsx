@@ -5,7 +5,14 @@ import { insuranceCategories } from "@/constants/insurance";
 const InsuranceTypes = () => {
   return (
     <>
-      <section className="container py-20">
+      <section className="container py-10">
+        <div className="text-center">
+          <h2 className="text-4xl md:text-5xl font-bold text-gray-800 mb-4">
+            أنواع التأمينات بالسوق المصري
+          </h2>
+          <div className="w-24 h-1 bg-primary mx-auto rounded-full"></div>
+        </div>
+
         <div className="grid grid-cols-[repeat(auto-fill,minmax(230px,1fr))] w-full gap-10 py-10 sm:grid-cols-[repeat(auto-fill,minmax(460px,1fr))]">
           <InsuranceCardsContainer
             insuranceSrc={insuranceCategories[0].insuranceSrc}

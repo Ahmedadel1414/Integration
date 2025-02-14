@@ -9,11 +9,11 @@ const Nav = () => {
 
   return (
     <nav className="text-xl hidden md:flex">
-      <ul className="flex justify-center">
+      <ul className="flex justify-center gap-x-4">
         {navBarr.map((section, index) => (
           <li
             key={index}
-            className={`mx-4 hover:text-primary ${
+            className={`hover:text-primary ${
               pathname == `/${section.url}` && "text-primary font-bold"
             }`}
           >

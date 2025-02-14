@@ -3,113 +3,67 @@ import { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "سياسة الخصوصية | Integration",
-  description: "سياسة الخصوصية لشركة Integration للوساطة المالية",
+  title: "الشروط والأحكام | Integration",
+  description: "الشروط والأحكام لشركة Integration للوساطة المالية",
 };
 
-const PrivacyPolicy = () => {
+const TermsAndConditions = () => {
   return (
     <div className="min-h-screen bg-gray-50">
       <div className="container mx-auto px-4 py-12">
         <h1 className="text-4xl font-bold text-center mb-16 text-primary">
-          إشعار حماية البيانات والخصوصية
+          الشروط والأحكام
         </h1>
 
         <div
           className="max-w-4xl mx-auto space-y-8 bg-white rounded-2xl shadow-lg p-8"
           dir="rtl"
         >
-          {/* المقدمة */}
+          {/* التزاماتنا */}
           <section className="space-y-4">
-            <h2 className="text-2xl font-bold text-primary">مقدمة</h2>
-            <p className="text-gray-600 leading-relaxed">
-              تلتزم شركة Integration للوساطة المالية بحماية خصوصيتك وأمن بياناتك
-              الشخصية. نحن ملتزمون بمعالجة بياناتك بطريقة قانونية وآمنة وشفافة،
-              وفقاً لأعلى معايير الصناعة وقوانين حماية البيانات المعمول بها في
-              المملكة العربية السعودية.
-            </p>
-          </section>
-
-          {/* المعلومات التي نجمعها */}
-          <section className="space-y-4">
-            <h2 className="text-2xl font-bold text-primary">
-              المعلومات التي نجمعها
-            </h2>
+            <h2 className="text-2xl font-bold text-primary">إلتزاماتنا</h2>
             <p className="text-gray-600 mb-4">
-              نقوم بجمع أنواع مختلفة من البيانات الشخصية عنك، بما في ذلك:
+              تم تحديدها من خلال القانون واللوائح التنفيذية والقرارات التنظيمية الصادرة عن الهيئة العامة للرقابة المالية ومنها على سبيل الحصر:
             </p>
             <ul className="space-y-3 text-gray-600 list-disc list-inside pr-4">
               <li>
-                <span className="font-semibold">معلومات الاتصال:</span> الاسم،
-                العنوان، رقم الهاتف، البريد الإلكتروني
+                قرار مجلس إدارة الهيئة العامة للرقابة المالية رقم ٢٣ بتاريخ ٩ فبراير ٢٠١٤ بشأن القواعد الحاكمة لممارسة نشاط وساطة التأمين داخل جمهورية مصر العربية وما صدر عليه من تعديلاته.
               </li>
               <li>
-                <span className="font-semibold">معلومات الهوية:</span> رقم
-                الهوية الوطنية، تاريخ الميلاد، الجنسية، تفاصيل السجل التجاري
-                للشركات
-              </li>
-              <li>
-                <span className="font-semibold">معلومات التأمين:</span> معلومات
-                عن وثائق التأمين الحالية والسابقة، المطالبات، المستفيدين
-              </li>
-              <li>
-                <span className="font-semibold">معلومات الدفع:</span> معلومات
-                الدفع، بما في ذلك تفاصيل بطاقة الائتمان
-              </li>
-              <li>
-                <span className="font-semibold">معلومات أخرى:</span> قد نجمع
-                بيانات أخرى عند تفاعلك معنا، مثل المعلومات التي تقدمها عند تقديم
-                طلب أو استفسار
+                قانون التأمين الموحد رقم (١٥٥) لسنة ٢٠٢٤
               </li>
             </ul>
-          </section>
-
-          {/* أسباب جمع البيانات */}
-          <section className="space-y-4">
-            <h2 className="text-2xl font-bold text-primary">
-              أسباب جمع البيانات
-            </h2>
-            <p className="text-gray-600 mb-4">
-              نقوم بجمع بياناتك الشخصية للأغراض التالية:
+            <p className="text-gray-600 mt-4">
+              بالإضافة إلى ما أقرته الهيئة العامة للرقابة المالية من إلتزامات على شركات الوساطة فإننا نتميز بأن نقدم إلى عملاؤنا اتفاقيات تنظم وتوضح وتشرح تفاصيل التعامل بما يضمن علاقة مستقرة ومستمرة لمدى طويل وهي:
             </p>
             <ul className="space-y-3 text-gray-600 list-disc list-inside pr-4">
-              <li>
-                <span className="font-semibold">تقديم خدمات الوساطة:</span>{" "}
-                لتقييم الطلبات، ودعم إصدار الوثائق من شركات التأمين، ومعالجة
-                المطالبات
-              </li>
-              <li>
-                <span className="font-semibold">التواصل معك:</span> للرد على
-                استفساراتك، وتقديم الدعم، وإرسال الإشعارات المهمة
-              </li>
-              <li>
-                <span className="font-semibold">التسويق:</span> لإعلامك
-                بالمنتجات والخدمات الجديدة التي قد تهمك، بموافقتك المسبقة
-              </li>
-              <li>
-                <span className="font-semibold">تحسين خدماتنا:</span> لتحليل
-                البيانات لفهم احتياجات عملائنا وتحسين جودة خدماتنا
-              </li>
+              <li>اتفاقية مستوى الخدمة (Service Level Agreement (SLA</li>
+              <li>اتفاقية شروط العمل (Terms of business (TOB</li>
+              <li>عقد اتفاق (Contract Agreement (CA</li>
             </ul>
           </section>
 
-          {/* كيفية استخدام البيانات */}
+          {/* إلتزامات عملائنا */}
           <section className="space-y-4">
-            <h2 className="text-2xl font-bold text-primary">
-              كيفية استخدام البيانات
-            </h2>
-            <p className="text-gray-600 leading-relaxed">
-              نستخدم بياناتك الشخصية بطريقة تتوافق مع القوانين واللوائح المعمول
-              بها. نحن نتخذ جميع التدابير اللازمة لضمان معالجة بياناتك بشكل آمن
-              وسري.
+            <h2 className="text-2xl font-bold text-primary">إلتزامات عملائنا</h2>
+            <p className="text-gray-600 mb-4">
+              لا توجد على عملائنا أي التزامات أدبية أو مالية بخلاف ما يلي:
             </p>
+            <ul className="space-y-3 text-gray-600 list-disc list-inside pr-4">
+              <li>تقديم البيانات الصحيحة عند طلب إصدار أو تجديد أي وثيقة.</li>
+              <li>موافاتنا بأي مستندات نحتاجها تدعم إدارة الملف التأميني.</li>
+              <li>الإجابة على أي استفسارات نطلبها.</li>
+              <li>
+                الامتناع عن التدخل في التفاوض مع شركات التأمين أو تفويض وسيط تأميني آخر، حيث أننا في هذه المرحلة تحديداً نحتاج لتوحيد خط التفاوض دون تدخل من طرف آخر يؤثر سلباً على نجاح سير العمل الذي نصبو إليه معاً.
+              </li>
+            </ul>
           </section>
 
           {/* معلومات الاتصال */}
           <section className="mt-12 pt-8 border-t border-gray-200">
             <div className="text-center">
               <p className="text-gray-600">
-                للتواصل معنا بخصوص سياسة الخصوصية:
+                للتواصل معنا:
               </p>
               <p className="text-primary font-semibold mt-2">
                 <Link
@@ -130,4 +84,4 @@ const PrivacyPolicy = () => {
   );
 };
 
-export default PrivacyPolicy;
+export default TermsAndConditions;

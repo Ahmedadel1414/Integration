@@ -5,14 +5,13 @@ const AboutSection = () => {
   return (
     <section className="container py-10">
       <AboutUs />
-      <div className="text-center">
-        <Link
-          className="inline-block bg-primary text-white px-11 py-3 rounded-md m-auto hover:bg-opacity-80"
-          href="/about-us"
-        >
-          المزيد عنا
-        </Link>
-      </div>
+
+      <Link
+        className="block w-fit mx-auto mt-10 bg-primary text-white px-11 py-3 rounded-md hover:bg-opacity-80"
+        href="/about-us"
+      >
+        المزيد عنا
+      </Link>
     </section>
   );
 };

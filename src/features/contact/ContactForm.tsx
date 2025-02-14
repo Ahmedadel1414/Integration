@@ -1,6 +1,6 @@
 const ContactForm = () => {
   return (
-    <form className="flex flex-col">
+    <form className="flex flex-col w-full">
       <label htmlFor="name" className="text-xl font-medium mb-2.5">
         الاسم
       </label>

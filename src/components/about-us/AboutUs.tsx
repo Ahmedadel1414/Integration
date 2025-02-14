@@ -2,50 +2,74 @@ import { introduction1, introduction2 } from "@/constants/aboutUs";
 import Image from "next/image";
 import React from "react";
 
-const AboutUs = () => {
+type AboutUsProps = {
+  displayHeading?: boolean;
+};
+
+const AboutUs = ({ displayHeading = true }: AboutUsProps) => {
   return (
-    <div>
-      <h2 className="m-auto text-center text-5xl font-semibold pb-5">من نحن</h2>
-      {/* About 1 */}
-      <div className="flex flex-col items-center mt-10 gap-10 pb-10">
-        <div className="flex flex-col gap-10 bg-gray-500 rounded-xl lg:flex-row">
-          <Image
-            src="/assets/home-imgs/hero.jpg"
-            alt="hero"
-            width={550}
-            height={367}
-            className="border-l border-gray-400 rounded-xl rounded-tl-none rounded-bl-none min-w-full lg:min-w-[550px]"
-          />
-          <span className="flex flex-col justify-center">
-            {introduction1.map((paragraph, index) => (
-              <p
-                key={index}
-                className="text-sm text-white py-5 px-3 xs:text-lg"
-              >
-                {paragraph}
-              </p>
-            ))}
-          </span>
+    <div className="max-w-7xl mx-auto px-4">
+      {displayHeading && (
+        <div className="text-center mb-10">
+          <h2 className="text-4xl md:text-5xl font-bold text-gray-800 mb-4">
+            من نحن
+          </h2>
+          <div className="w-24 h-1 bg-primary mx-auto rounded-full"></div>
         </div>
-        {/* About 2 */}
-        <div className="flex flex-col gap-10 bg-gray-500 rounded-xl lg:flex-row">
-          <span className="flex flex-col justify-center">
-            {introduction2.map((paragraph, index) => (
-              <p
-                key={index}
-                className="text-sm text-white py-5 px-3 xs:text-lg"
-              >
-                {paragraph}
-              </p>
-            ))}
-          </span>
-          <Image
-            src="/assets/home-imgs/hero.jpg"
-            alt="hero"
-            width={550}
-            height={367}
-            className="border-r border-gray-400 rounded-xl rounded-tr-none rounded-br-none min-w-full lg:min-w-[550px]"
-          />
+      )}
+
+      {/* About Cards Container */}
+      <div className="space-y-8">
+        {/* About Card 1 */}
+        <div className="bg-white rounded-2xl shadow-lg overflow-hidden border">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+            <div className="order-2 lg:order-1 p-8">
+              <div className="h-full flex flex-col justify-center space-y-4">
+                {introduction1.map((paragraph, index) => (
+                  <p
+                    key={index}
+                    className="text-gray-600 leading-relaxed text-base md:text-lg"
+                  >
+                    {paragraph}
+                  </p>
+                ))}
+              </div>
+            </div>
+            <div className="order-1 lg:order-2 h-[300px] lg:h-auto relative">
+              <Image
+                src="/assets/home-imgs/hero.jpg"
+                alt="Insurance brokerage services"
+                fill
+                className="object-cover"
+              />
+            </div>
+          </div>
+        </div>
+
+        {/* About Card 2 */}
+        <div className="bg-white rounded-2xl shadow-lg overflow-hidden border">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+            <div className="h-[300px] lg:h-auto relative">
+              <Image
+                src="/assets/home-imgs/hero.jpg"
+                alt="Insurance consulting"
+                fill
+                className="object-cover"
+              />
+            </div>
+            <div className="p-8">
+              <div className="h-full flex flex-col justify-center space-y-4">
+                {introduction2.map((paragraph, index) => (
+                  <p
+                    key={index}
+                    className="text-gray-600 leading-relaxed text-base md:text-lg"
+                  >
+                    {paragraph}
+                  </p>
+                ))}
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>

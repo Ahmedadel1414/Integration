@@ -3,15 +3,18 @@ import ContactForm from "./ContactForm";
 
 const Contact = () => {
   return (
-    <section className="pt-10">
+    <section className="pt-10 bg-gray-100">
       <div className="container">
-        <h2 className="m-auto text-center text-5xl font-semibold pb-5">
-          تواصل معنا
-        </h2>
-        <div className="flex flex-col gap-10 lg:flex-row mt-10 pb-10">
-          <div className="w-full">
-            <ContactForm />
-          </div>
+        <div className="text-center">
+          <h2 className="text-4xl md:text-5xl font-bold text-gray-800 mb-4">
+            تواصل معنا
+          </h2>
+          <div className="w-24 h-1 bg-primary mx-auto rounded-full"></div>
+        </div>
+
+        <div className="flex flex-col gap-10 lg:flex-row mt-20 pb-10">
+          <ContactForm />
+
           <Image
             src="/assets/home-imgs/hero.jpg"
             alt="hero"

@@ -1,14 +1,25 @@
 import Cards from "@/components/cards/Cards";
 import Link from "next/link";
 
-const OurServices = () => {
+type OurServicesProps = {
+  displayHeading?: boolean;
+};
+
+const OurServices = ({ displayHeading = true }: OurServicesProps) => {
   return (
-    <section className="bg-gray-100">
-      <div className="container py-10">
-        <h2 className="m-auto text-center text-5xl font-semibold pb-5">
-          خدماتنا
-        </h2>
+    <section className={`bg-gray-100 ${displayHeading ? "py-10" : "pb-10"}`}>
+      <div className="container text-center">
+        {displayHeading && (
+          <div>
+            <h2 className="text-4xl md:text-5xl font-bold text-gray-800 mb-4">
+              خدماتنا
+            </h2>
+            <div className="w-24 h-1 bg-primary mx-auto rounded-full"></div>
+          </div>
+        )}
+
         <Cards />
+
         <div className="text-center">
           <Link
             className="inline-block bg-primary text-white px-11 py-3 rounded-md m-auto hover:bg-opacity-80"

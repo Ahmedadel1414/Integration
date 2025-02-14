@@ -3,7 +3,9 @@ import Link from "next/link";
 
 const Footer = () => {
   return (
-    <footer className="flex flex-col items-center text-center justify-around content-center bg-gray-100 p-10 lg:flex-row lg:text-right border-t border-t-solid border-gray-200">
+    <footer
+      className={`flex flex-col items-center text-center justify-around content-center p-10 lg:flex-row lg:text-right border-t border-t-solid border-gray-200`}
+    >
       <div className="flex flex-col items-center lg:items-start">
         <Link href={"/"}>
           <Image
@@ -18,7 +20,7 @@ const Footer = () => {
           href="/privacy-policy"
           className="text-primary hover:underline transition-colors mt-4 mb-6"
         >
-          سياسة الخصوصية
+          الشروط والأحكام
         </Link>
       </div>
       <div>
@@ -36,7 +38,7 @@ const Footer = () => {
         </p>
       </div>
       <div>
-        <h3 className="pb-3">العناوين</h3>
+        <h3 className="pb-3">العنوان</h3>
         <p className="pb-2">
           التجمع الخامس - المبنى الادارى - سكاي مول - القاهرة الجديدة
         </p>

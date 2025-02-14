@@ -13,6 +13,7 @@ const MobileNav = () => {
       <div
         onClick={() => {
           setIsHidden((prev) => !prev);
+          document.body.style.overflow = "hidden";
         }}
         className="cursor-pointer"
       >
@@ -20,9 +21,10 @@ const MobileNav = () => {
         <span className="block bg-black w-7 h-[3px] my-1"></span>
         <span className="block bg-black w-7 h-[3px] my-1"></span>
       </div>
+
       <div
         id="mobile-nav"
-        className="absolute top-0 left-0 w-full h-full bg-white"
+        className="fixed top-0 left-0 w-full h-full bg-white z-[999]"
         style={{
           display: isHidden ? "none" : "block",
         }}
@@ -30,6 +32,7 @@ const MobileNav = () => {
         <span
           onClick={() => {
             setIsHidden((prev) => !prev);
+            document.body.style.overflow = "auto";
           }}
           className="block absolute right-14 top-5 cursor-pointer text-gray-700 text-3xl hover:text-primary"
         >
@@ -42,6 +45,7 @@ const MobileNav = () => {
                 key={index}
                 onClick={() => {
                   setIsHidden((prev) => !prev);
+                  document.body.style.overflow = "auto";
                 }}
                 className={`mx-4 pb-10 hover:text-primary ${
                   pathname == `/${section.url}` && "text-primary font-bold"
