@@ -1,8 +1,8 @@
-import AboutSection from "@/features/about-section/AboutSection";
-import Contact from "@/features/contact/Contact";
-import Hero from "@/features/hero/Hero";
-import InsuranceTypes from "@/features/insurance-types/InsuranceTypes";
-import OurServices from "@/features/our-services/OurServices";
+import AboutSection from "@/components/about-us/AboutSection";
+import Contact from "@/components/contact/Contact";
+import Hero from "@/components/Hero/Hero";
+import InsuranceTypes from "@/components/InsuranceTypes/InsuranceTypes";
+import OurServices from "@/components/OurServices/OurServices";
 
 const Home = () => {
   return (

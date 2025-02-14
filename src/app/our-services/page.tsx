@@ -3,7 +3,7 @@
 import { insuranceCategories } from "@/constants/insurance";
 import { useEffect } from "react";
 
-import OurServices from "@/features/our-services/OurServices";
+import OurServices from "@/components/OurServices/OurServices";
 import Image from "next/image";
 import Link from "next/link";
 

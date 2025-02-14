@@ -1,4 +1,4 @@
-import Contact from "@/features/contact/Contact";
+import Contact from "@/components/contact/Contact";
 import Image from "next/image";
 
 const Page = () => {
