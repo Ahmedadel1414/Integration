@@ -16,6 +16,7 @@ const MobileNav = () => {
           document.body.style.overflow = "hidden";
         }}
         className="cursor-pointer"
+        aria-label="burger menu - nav menu"
       >
         <span className="block bg-black w-7 h-[3px] my-1"></span>
         <span className="block bg-black w-7 h-[3px] my-1"></span>
@@ -35,10 +36,11 @@ const MobileNav = () => {
             document.body.style.overflow = "auto";
           }}
           className="block absolute right-14 top-5 cursor-pointer text-gray-700 text-3xl hover:text-primary"
+          aria-label="exit burger menu"
         >
           X
         </span>
-        <nav>
+        <nav aria-label="breadcrumb">
           <ul className="h-screen text-center content-center text-3xl">
             {navBarr.map((section, index) => (
               <li

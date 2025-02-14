@@ -17,7 +17,7 @@ const Footer = () => {
           />
         </Link>
         <Link
-          href="/privacy-policy"
+          href="/terms-and-conditions"
           className="text-primary hover:underline transition-colors mt-4 mb-6"
         >
           الشروط والأحكام
