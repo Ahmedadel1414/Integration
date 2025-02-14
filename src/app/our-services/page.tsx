@@ -65,7 +65,7 @@ const Page = () => {
             {insuranceCategories.map((insurance, index) => (
               <div
                 key={index}
-                className="flex flex-col border border-solid border-gray-200 shadow-lg shadow-zinc-300 rounded-lg overflow-hidden last:col-start-2"
+                className="flex flex-col border border-solid border-gray-200 shadow-lg shadow-zinc-300 rounded-lg overflow-hidden"
               >
                 <Image
                   alt="Insurance Type"
