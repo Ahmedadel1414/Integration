@@ -8,7 +8,7 @@ const Nav = () => {
   const pathname = usePathname();
 
   return (
-    <nav className="text-xl hidden md:flex" aria-label="breadcrumb">
+    <nav className="text-lg max-[850px]:text-base hidden md:flex" aria-label="breadcrumb">
       <ul className="flex justify-center gap-x-4">
         {navBarr.map((section, index) => (
           <li

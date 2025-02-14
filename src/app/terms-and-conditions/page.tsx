@@ -80,7 +80,7 @@ const TermsAndConditions = () => {
                 </Link>
               </p>
               <p className="text-gray-600 mt-1">
-                هاتف: 01080631393 (2+) - 01225820227 (2+)
+                هاتف: 01080631393 (20+) - 01225820227 (20+)
               </p>
             </div>
           </section>

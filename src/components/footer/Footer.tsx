@@ -3,45 +3,117 @@ import Link from "next/link";
 
 const Footer = () => {
   return (
-    <footer
-      className={`flex flex-col items-center text-center justify-around content-center p-10 lg:flex-row lg:text-right border-t border-t-solid border-gray-200`}
-    >
-      <div className="flex flex-col items-center lg:items-start">
-        <Link href={"/"}>
-          <Image
-            src="/assets/logos/integration.jpg"
-            alt="Footer"
-            width={200}
-            height={200}
-            className="pb-5 lg:pb-0 mix-blend-multiply"
-          />
-        </Link>
-        <Link
-          href="/terms-and-conditions"
-          className="text-primary hover:underline transition-colors mt-4 mb-6"
-        >
-          الشروط والأحكام
-        </Link>
-      </div>
-      <div>
-        <h3 className="pb-3">تواصل معنا</h3>
-        <p className="pb-2">تليفون: 26198101 (202+) - 26198102(202+)</p>
-        <p className="pb-2">موابيل: 01080631393(2+) - 01225820227(2+)</p>
-        <p className="pb-2">
-          بريد إلكتروني:{" "}
-          <Link
-            className="text-primary underline underline-offset-2"
-            href={"mailto:director@iibeg.com"}
-          >
-            director@iibeg.com
-          </Link>
-        </p>
-      </div>
-      <div>
-        <h3 className="pb-3">العنوان</h3>
-        <p className="pb-2">
-          التجمع الخامس - المبنى الادارى - سكاي مول - القاهرة الجديدة
-        </p>
+    <footer className="bg-white border-t border-gray-200">
+      <div className="max-w-screen-2xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 text-right">
+          {/* Logo and Legal Links Section */}
+          <div className="flex flex-col items-center md:items-start col-span-1 lg:col-span-1">
+            <Link href="/" className="inline-block">
+              <Image
+                src="/assets/logos/integration.jpg"
+                alt="Integration"
+                width={180}
+                height={180}
+                className="mix-blend-multiply mb-6"
+              />
+            </Link>
+            <div className="flex flex-col space-y-3 text-sm">
+              <Link
+                href="/terms-and-conditions"
+                className="text-gray-600 hover:text-secondary transition-colors"
+              >
+                الشروط والأحكام
+              </Link>
+              <Link
+                href="/privacy-policy"
+                className="text-gray-600 hover:text-secondary transition-colors"
+              >
+                سياسة الخصوصية
+              </Link>
+            </div>
+          </div>
+
+          {/* Contact Info Section */}
+          <div className="lg:col-span-2 grid grid-cols-1 md:grid-cols-2 gap-8 text-center">
+            <div>
+              <h3 className="text-lg font-semibold text-primary mb-4">
+                تواصل معنا
+              </h3>
+              <div className="space-y-3 text-sm text-gray-600">
+                <p>تليفون: 26198101 (202+) - 26198102 (202+)</p>
+                <p>موبايل: 01080631393 (20+) - 01225820227 (20+)</p>
+                <p>
+                  بريد إلكتروني:{" "}
+                  <Link
+                    href="mailto:director@iibeg.com"
+                    className="text-secondary hover:underline underline-offset-2"
+                  >
+                    director@iibeg.com
+                  </Link>
+                </p>
+              </div>
+            </div>
+
+            <div>
+              <h3 className="text-lg font-semibold text-primary mb-4">
+                العنوان
+              </h3>
+              <p className="text-sm text-gray-600">
+                التجمع الخامس - المبنى الادارى - سكاي مول - القاهرة الجديدة
+              </p>
+            </div>
+          </div>
+
+          {/* Social Links Section */}
+          <div className="lg:col-span-1 text-center">
+            <h3 className="text-lg font-semibold text-primary mb-4">تابعنا</h3>
+            <div className="flex flex-row justify-center space-x-4 space-x-reverse">
+              <Link
+                href="#"
+                className="text-gray-600 hover:text-secondary transition-colors p-2"
+              >
+                <svg
+                  className="w-6 h-6"
+                  fill="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path d="M22.675 0h-21.35c-.732 0-1.325.593-1.325 1.325v21.351c0 .731.593 1.324 1.325 1.324h11.495v-9.294h-3.128v-3.622h3.128v-2.671c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.463.099 2.795.143v3.24l-1.918.001c-1.504 0-1.795.715-1.795 1.763v2.313h3.587l-.467 3.622h-3.12v9.293h6.116c.73 0 1.323-.593 1.323-1.325v-21.35c0-.732-.593-1.325-1.325-1.325z" />
+                </svg>
+              </Link>
+              <Link
+                href="#"
+                className="text-gray-600 hover:text-secondary transition-colors p-2"
+              >
+                <svg
+                  className="w-6 h-6"
+                  fill="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm6.066 9.645c.183 4.04-2.83 8.544-8.164 8.544-1.622 0-3.131-.476-4.402-1.291 1.524.18 3.045-.244 4.252-1.189-1.256-.023-2.317-.854-2.684-1.995.451.086.895.061 1.298-.049-1.381-.278-2.335-1.522-2.304-2.853.388.215.83.344 1.301.359-1.279-.855-1.641-2.544-.889-3.835 1.416 1.738 3.533 2.881 5.92 3.001-.419-1.796.944-3.527 2.799-3.527.825 0 1.572.349 2.096.907.654-.128 1.27-.368 1.824-.697-.215.671-.67 1.233-1.263 1.589.581-.07 1.135-.224 1.649-.453-.384.578-.87 1.084-1.433 1.489z" />
+                </svg>
+              </Link>
+              <Link
+                href="#"
+                className="text-gray-600 hover:text-secondary transition-colors p-2"
+              >
+                <svg
+                  className="w-6 h-6"
+                  fill="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
+                </svg>
+              </Link>
+            </div>
+          </div>
+        </div>
+
+        {/* Copyright Section */}
+        <div className="mt-8 pt-8 border-t border-gray-200">
+          <p className="text-center text-sm text-gray-600">
+            جميع الحقوق محفوظة &copy; {new Date().getFullYear()} Integration
+          </p>
+        </div>
       </div>
     </footer>
   );
