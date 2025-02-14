@@ -28,7 +28,7 @@ const ContactForm = () => {
         required
       ></textarea>
 
-      <button className="inline-block bg-primary text-white px-11 py-3 rounded-md mx-auto my-10 hover:bg-opacity-80">
+      <button className="inline-block bg-primary text-white px-11 py-3 rounded-md ml-auto my-10 hover:bg-opacity-80">
         إرسال الرساله
       </button>
     </form>

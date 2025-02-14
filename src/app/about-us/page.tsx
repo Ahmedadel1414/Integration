@@ -17,23 +17,23 @@ const Page = () => {
 
   return (
     <section>
-      <div className="relative -z-50 bg-[url(/assets/home-imgs/hero.jpg)] filter w-full bg-cover bg-fixed px-0 py-[150px]">
-        <div className="bg-black w-full h-full top-0 left-0 absolute -z-40 opacity-60"></div>
+      <div className="relative -z-50 bg-[url(/assets/who-are-we.jpg)] filter w-full bg-cover bg-center px-0 py-[150px]">
+        <div className="bg-black w-full h-full top-0 left-0 absolute -z-40 opacity-75"></div>
         <div className="space-y-8">
           <h1 className="m-auto text-center text-4xl font-semibold pt-5 xs:text-5xl text-white">
             من نحن
           </h1>
           <div className="space-y-3">
-            <p className="m-auto text-center text-xl font-medium xs:text-2xl text-white">
+            <p className="m-auto text-center text-base font-medium sm:text-xl md:text-2xl text-white">
               - نحن شركة متخصصة في تقديم حلول تأمينية متكاملة، مصممة خصيصًا
               لتلبية احتياجات عملائنا وفق أعلى معايير الجودة والموثوقية.
             </p>
-            <p className="m-auto text-center text-xl font-medium xs:text-2xl text-white">
+            <p className="m-auto text-center text-base font-medium sm:text-xl md:text-2xl text-white">
               - نمتلك خبرة واسعة في مجال التأمين، ونعمل من خلال فريق محترف لضمان
               تقديم خدمات مبتكرة تساعد عملاءنا على تحقيق الأمان المالي
               والاستقرار.
             </p>
-            <p className="m-auto text-center text-xl font-medium xs:text-2xl text-white">
+            <p className="m-auto text-center text-base font-medium sm:text-xl md:text-2xl text-white">
               - نحرص على التطوير المستمر واعتماد أحدث المعايير والتقنيات في
               تقديم خدماتنا، بهدف تحقيق رضا العملاء وتعزيز مكانتنا في السوق
               المصري.

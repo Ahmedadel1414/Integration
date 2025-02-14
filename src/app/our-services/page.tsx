@@ -19,22 +19,31 @@ const Page = () => {
 
   return (
     <section>
-      <div className="relative -z-50 bg-[url(/assets/home-imgs/hero.jpg)] w-full bg-cover bg-fixed px-0 py-[150px]">
-        <div className="bg-black w-full h-full top-0 left-0 absolute -z-40 opacity-60"></div>
+      <div className="relative -z-50 w-full bg-cover px-0 py-[150px]">
+        <div className="absolute inset-0 -z-50">
+          <Image
+            src="/assets/services.jpg"
+            alt="Services Section Image"
+            width={1600}
+            height={476}
+            className="w-full h-full object-cover object-bottom"
+          />
+        </div>
+        <div className="bg-black w-full h-full top-0 left-0 absolute -z-40 opacity-70"></div>
         <div className="space-y-8">
           <h1 className="m-auto text-center text-4xl font-semibold pt-5 xs:text-5xl text-white">
             الخدمات التي نقدمها
           </h1>
           <div className="space-y-3">
-            <p className="m-auto text-center text-xl font-medium xs:text-2xl text-white">
+            <p className="m-auto text-center text-base font-medium sm:text-xl md:text-2xl text-white">
               - نقدم حلولًا تأمينية متكاملة مصممة لتلبية احتياجات عملائنا، مع
               ضمان أعلى مستويات الجودة والموثوقية.
             </p>
-            <p className="m-auto text-center text-xl font-medium xs:text-2xl text-white">
+            <p className="m-auto text-center text-base font-medium sm:text-xl md:text-2xl text-white">
               -نلتزم بتقديم خدمات مبتكرة تساعد عملاءنا على تحقيق الأمان المالي
               والاستقرار، من خلال خبرتنا العميقة وفريقنا المتخصص.
             </p>
-            <p className="m-auto text-center text-xl font-medium xs:text-2xl text-white">
+            <p className="m-auto text-center text-base font-medium sm:text-xl md:text-2xl text-white">
               - نسعى دائمًا إلى تطوير خدماتنا وفقًا لأحدث المعايير، لضمان توفير
               أفضل الحلول التأمينية التي تلبي تطلعات عملائنا في السوق المصري.
             </p>
