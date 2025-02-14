@@ -21,7 +21,7 @@ export const insuranceCategories: Insurances[] = [
     insuranceSrc: "/assets/insurance-imgs/insurance (10).webp",
     insuranceTitle: "- التأمين الهندسي.",
     insuranceDescription:
-      "يغطي الأضرار التي قد تحدث أثناء تنفيذ المشاريع الهندسية، مثل انهيار المباني أو تعطل المعدات.",
+      "يغطى الأضرار التي قد تحدث أثناء تنفيذ المشروعات الهندسية او التى تحدث بعدها بسبب خطا أثناء تنفيذ تلك المشروعات",
   },
   {
     insuranceSrc: "/assets/insurance-imgs/insurance (11).webp",
@@ -47,12 +47,12 @@ export const insuranceCategories: Insurances[] = [
     insuranceDescription:
       "يحمي الشركات والأفراد من مخاطر عدم سداد القروض أو الديون المستحقة.",
   },
-  {
-    insuranceSrc: "/assets/insurance-imgs/insurance (2).webp",
-    insuranceTitle: "- التأمين ضد الأخطار الخاصة.",
-    insuranceDescription:
-      "يغطي الحوادث أو الأضرار الخاصة التي لا تندرج تحت التأمينات التقليدية.",
-  },
+  // {
+  //   insuranceSrc: "/assets/insurance-imgs/insurance (2).webp",
+  //   insuranceTitle: "- التأمين ضد الأخطار الخاصة.",
+  //   insuranceDescription:
+  //     "يغطي الحوادث أو الأضرار الخاصة التي لا تندرج تحت التأمينات التقليدية.",
+  // },
   {
     insuranceSrc: "/assets/insurance-imgs/insurance (3).webp",
     insuranceTitle: "- تأمينات الأفراد / الشركات (حياة - طبي - معاش - تعليم)",
