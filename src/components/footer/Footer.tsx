@@ -5,7 +5,7 @@ const Footer = () => {
   return (
     <footer className="bg-white border-t border-gray-200">
       <div className="max-w-screen-2xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 text-right">
+        <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4  text-right">
           {/* Logo and Legal Links Section */}
           <div className="flex flex-col items-center md:items-start col-span-1 lg:col-span-1">
             <Link href="/" className="inline-block">
