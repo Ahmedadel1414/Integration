@@ -1,4 +1,15 @@
+import { IconType } from "react-icons";
+import {
+  FaBuilding,
+  FaChartBar,
+  FaFileInvoiceDollar,
+  FaHeadset,
+  FaShieldAlt,
+  FaUserTie,
+} from "react-icons/fa";
+
 type OurServicesType = {
+  cardIcon: IconType;
   cardTitle: string;
   cardParagraph: string;
   cardParagraph2?: string;
@@ -6,6 +17,7 @@ type OurServicesType = {
 
 export const ourServices: OurServicesType[] = [
   {
+    cardIcon: FaShieldAlt,
     cardTitle: "حلول و توصيات تأمينية",
     cardParagraph:
       "- لجميع أنواع الأمين الموجودة بالسوق المصري و تقديم نماذج للحلول التأمينية المعمول بها في مصر و الاأسواق العالمية.",
@@ -13,6 +25,7 @@ export const ourServices: OurServicesType[] = [
       "- نتوم بدراسة وثائق التأمين الحالية و تقديم دراسة بمقترحات التطوير للشروط و الأسعار.",
   },
   {
+    cardIcon: FaChartBar,
     cardTitle: "دراسة الأصول الثابتة و المتداولة",
     cardParagraph:
       "- دراسة الأصول لتقدير المخاطر وتقديم التوصيات لأفضل الحلول التأمينية المناسبة.",
@@ -20,21 +33,25 @@ export const ourServices: OurServicesType[] = [
       "- دراسة تقييم الأصول المؤمنة مقارنة بالقيم السوقية الحالية لضمان تغطية مناسبة وضمان حقوق العملاء في حالة التعويض.",
   },
   {
+    cardIcon: FaHeadset,
     cardTitle: "خدمة عملاء محترفة و متخصصة",
     cardParagraph: "- طوال مدة التأمين.",
     cardParagraph2: "- موجودون دائما للعدم و المتابعة و التوجيه.",
   },
   {
+    cardIcon: FaBuilding,
     cardTitle: "ادارة كاملة مع شركات التأمين",
     cardParagraph:
       "- كل المخاطبات مع شركات التأمين من طلب عروض الأسعار، تقديم دراسة مقارنة للعروض، تقديم التوصيات إلى إصدار وثائق التأمين ومراجعتها وسدادها ثم أي تعديل مطلوب خلال السنة التأمينية وبالتأكيد أيضًـا حـال وجود أي حادث.",
   },
   {
+    cardIcon: FaFileInvoiceDollar,
     cardTitle: "متابعة كاملة للتعويضات",
     cardParagraph:
       "- في حالة وجود حادث، نقوم بمتابعة كاملة للمطالبات مع شركات التأمين بدءًا من إخطار الحادث، تجميع وتقديم المستندات المطلوبة ومراجعتها ثم التفاوض مع الخبراء المعينين ومع شركة التأمين وحتى التسوية النهائية ودفع التعويض للعميل.",
   },
   {
+    cardIcon: FaUserTie,
     cardTitle: "استشارات تأمينية متخصصة",
     cardParagraph:
       "- في حالة احتياج عميلنا إلى استشارات تأمينية متخصصة سواء في تقييم المخاطر أو تقييم الأصول بغرض التأمين أو تسوية التعويضات ، فإننا نقدم له هذه الخدمات من خلال أفضل إستشاري التأمين المعتمدين لدى الهيئة العامة للرقابة المالية لتلبية إحتياجات عملائنا.",

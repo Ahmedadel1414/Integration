@@ -14,36 +14,14 @@ const InsuranceTypes = () => {
         </div>
 
         <div className="grid grid-cols-[repeat(auto-fill,minmax(230px,1fr))] w-full gap-10 py-10 sm:grid-cols-[repeat(auto-fill,minmax(460px,1fr))]">
-          <InsuranceCardsContainer
-            insuranceSrc={insuranceCategories[0].insuranceSrc}
-            insuranceTitle={insuranceCategories[0].insuranceTitle}
-            insuranceDescription={insuranceCategories[0].insuranceDescription}
-          />
-          <InsuranceCardsContainer
-            insuranceSrc={insuranceCategories[1].insuranceSrc}
-            insuranceTitle={insuranceCategories[2].insuranceTitle}
-            insuranceDescription={insuranceCategories[3].insuranceDescription}
-          />
-          <InsuranceCardsContainer
-            insuranceSrc={insuranceCategories[4].insuranceSrc}
-            insuranceTitle={insuranceCategories[4].insuranceTitle}
-            insuranceDescription={insuranceCategories[4].insuranceDescription}
-          />
-          <InsuranceCardsContainer
-            insuranceSrc={insuranceCategories[5].insuranceSrc}
-            insuranceTitle={insuranceCategories[5].insuranceTitle}
-            insuranceDescription={insuranceCategories[5].insuranceDescription}
-          />
-          <InsuranceCardsContainer
-            insuranceSrc={insuranceCategories[6].insuranceSrc}
-            insuranceTitle={insuranceCategories[6].insuranceTitle}
-            insuranceDescription={insuranceCategories[6].insuranceDescription}
-          />
-          <InsuranceCardsContainer
-            insuranceSrc={insuranceCategories[7].insuranceSrc}
-            insuranceTitle={insuranceCategories[7].insuranceTitle}
-            insuranceDescription={insuranceCategories[7].insuranceDescription}
-          />
+          {insuranceCategories.slice(0, 6).map((ins) => (
+            <InsuranceCardsContainer
+              key={ins.insuranceTitle}
+              insuranceSrc={ins.insuranceSrc}
+              insuranceTitle={ins.insuranceTitle}
+              insuranceDescription={ins.insuranceDescription}
+            />
+          ))}
         </div>
         <div className="text-center">
           <Link
