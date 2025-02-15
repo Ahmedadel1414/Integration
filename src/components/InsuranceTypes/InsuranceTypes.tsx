@@ -7,8 +7,8 @@ const InsuranceTypes = () => {
     <>
       <section className="container py-10">
         <div className="text-center">
-          <h2 className="text-4xl md:text-5xl font-bold text-gray-800 mb-4">
-            أنواع التأمينات بالسوق المصري
+          <h2 className="text-2xl sm:text-3xl md:text-5xl font-bold text-gray-800 mb-4">
+            التغطيات التأمينية التى تقدمها الشركة
           </h2>
           <div className="w-24 h-1 bg-primary mx-auto rounded-full"></div>
         </div>

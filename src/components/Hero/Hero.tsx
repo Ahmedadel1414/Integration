@@ -3,7 +3,7 @@ import Link from "next/link";
 
 const Hero = () => {
   return (
-    <section className="min-h-[calc(100vh-100px)] text-center text-white flex items-center justify-center flex-col">
+    <section className="min-h-[calc(100vh-96px)] text-center text-white flex items-center justify-center flex-col">
       <div className="absolute -z-50 inset-0">
         <Image
           src="/assets/home.webp"

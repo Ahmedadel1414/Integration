@@ -1,9 +1,8 @@
 "use client";
-
 import { useEffect } from "react";
-
 import AboutUs from "@/components/about-us/AboutUs";
 import Link from "next/link";
+import TrustedBy from "@/components/Trusted-by/TrustedBy";
 
 const Page = () => {
   useEffect(() => {
@@ -39,6 +38,10 @@ const Page = () => {
             </p>
           </div>
         </div>
+      </div>
+
+      <div className="py-28">
+        <TrustedBy />
       </div>
 
       <div className="container py-10">

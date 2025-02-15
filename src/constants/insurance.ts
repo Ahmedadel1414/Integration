@@ -83,4 +83,16 @@ export const insuranceCategories: Insurances[] = [
     insuranceDescription:
       "يتيح للأفراد والشركات الحصول على تغطية تأمينية محلية أو دولية حسب الحاجة.",
   },
+  {
+    insuranceSrc: "/assets/insurance-imgs/insurance (14).webp",
+    insuranceTitle: "- تأمين المنتجات.",
+    insuranceDescription:
+      "يوفر تأمين المنتجات حماية محلية ودولية للأفراد والشركات، مما يقلل الخسائر ويضمن استمرارية الأعمال بأمان.",
+  },
+  {
+    insuranceSrc: "/assets/insurance-imgs/insurance (15).webp",
+    insuranceTitle: "- تأمين القطع الثمينة.",
+    insuranceDescription:
+      "يوفر حماية شاملة للقطع الثمينة مثل المجوهرات، الساعات الفاخرة، والتحف، مع تغطية محلية ودولية.",
+  },
 ];

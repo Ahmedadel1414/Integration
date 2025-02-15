@@ -1,23 +1,17 @@
-import Image from "next/image";
 import Link from "next/link";
+import Logo from "../logo/Logo";
 
 const Footer = () => {
   return (
     <footer className="bg-white border-t border-gray-200">
       <div className="max-w-screen-2xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4  text-right">
+        <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 text-right">
           {/* Logo and Legal Links Section */}
           <div className="flex flex-col items-center md:items-start col-span-1 lg:col-span-1">
-            <Link href="/" className="inline-block">
-              <Image
-                src="/assets/logos/integration.jpg"
-                alt="Integration"
-                width={180}
-                height={180}
-                className="mix-blend-multiply mb-6"
-              />
-            </Link>
-            <div className="flex flex-col space-y-3 text-sm">
+            <div className="mb-5">
+              <Logo />
+            </div>
+            <div className="flex flex-col space-y-3 text-sm mb-4 md:mb-0">
               <Link
                 href="/terms-and-conditions"
                 className="text-gray-600 hover:text-secondary transition-colors"

@@ -33,10 +33,6 @@ const page = () => {
       </div>
       <div className="min-h-screen bg-gray-50">
         <div className="container mx-auto px-4 py-12">
-          <h1 className="text-4xl font-bold text-center mb-16 text-primary">
-            الرؤية و الأهداف
-          </h1>
-
           <div
             className="max-w-4xl mx-auto space-y-8 bg-white rounded-2xl shadow-lg p-8"
             dir="rtl"

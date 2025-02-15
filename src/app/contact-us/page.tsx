@@ -24,11 +24,12 @@ const Page = () => {
           </h1>
           <div className="space-y-3">
             <p className="m-auto text-center text-base font-medium sm:text-xl md:text-2xl text-white">
-              نحن هنا للإجابة على استفساراتكم وتقديم الدعم الذي تحتاجونه بكل
-              احترافية وسرعة.
+              يتم تعيين مسئول للتعامل مع طلبات العميل اليوميه من
+              (تعديل-اضافة-الغاء) او اي طلبات اخري.
             </p>
             <p className="m-auto text-center text-base font-medium sm:text-xl md:text-2xl text-white">
-              لا تترددوا في التواصل معنا، فريقنا مستعد لمساعدتكم في أي وقت.
+              نقوم بمتابعة التجديدات و توفير عروض جديدو عند التجديد لايجاد بدائل
+              دائمه للعملاء
             </p>
           </div>
         </div>
