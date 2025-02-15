@@ -20,7 +20,7 @@ const Logo = () => {
           </div>
           <div className="relative flex flex-col items-center before:content-[''] before:bg-gray-400 before:w-[1px] before:h-[90%] before:absolute before:-right-1 before:top-1/2 before:-translate-y-1/2 z-50">
             <Image
-              src="/public/assets/logos/logo.PNG"
+              src="/assets/logos/logo.PNG"
               alt="logo"
               width={256}
               height={256}
