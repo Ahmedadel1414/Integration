@@ -1,12 +1,11 @@
 "use client";
 
-import { sliderInfo } from "@/constants/ImagSliderInfo";
-
 import Image from "next/image";
 import Slider from "react-slick";
 
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import { sliderInfo } from "@/constants/ImagSliderInfo";
 
 const ImagSlider = () => {
   const settings = {
@@ -59,11 +58,11 @@ const ImagSlider = () => {
               <div key={index}>
                 <Image
                   src={slider.sliderSrc}
-                  width={120} // Ensures uniform width
-                  height={96} // Ensures uniform height
+                  width={120}
+                  height={96}
                   alt={slider.sliderUlt}
                   loading="eager"
-                  className="mix-blend-multiply object-contain h-24 px-1" // Forces image consistency
+                  className="mix-blend-multiply object-contain h-24 px-1"
                 />
               </div>
             ))}
@@ -73,5 +72,4 @@ const ImagSlider = () => {
     </section>
   );
 };
-
 export default ImagSlider;
