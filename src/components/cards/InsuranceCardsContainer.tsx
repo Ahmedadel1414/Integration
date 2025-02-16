@@ -13,7 +13,7 @@ const InsuranceCardsContainer = ({
 }: Insurances) => {
   return (
     <>
-      <div className="flex flex-col border border-solid border-gray-200 shadow-lg shadow-zinc-300 rounded-lg overflow-hidden">
+      <div className="flex flex-col border border-solid border-gray-200 shadow-lg shadow-zinc-300 rounded-lg overflow-hidden bg-white">
         <Image
           alt="Insurance Type"
           src={insuranceSrc}
