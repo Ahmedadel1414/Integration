@@ -5,10 +5,10 @@ const Contact = () => {
     <section className="pt-10 bg-gray-100">
       <div className="container">
         <div className="text-center">
-          <h2 className="text-4xl md:text-5xl font-bold text-gray-800 mb-4">
+          <h2 className="text-4xl md:text-5xl font-bold text-primary mb-4">
             تواصل معنا
           </h2>
-          <div className="w-24 h-1 bg-primary mx-auto rounded-full"></div>
+          <div className="w-24 h-1 bg-secondary mx-auto rounded-full"></div>
         </div>
 
         <div className="flex flex-col gap-10 lg:flex-row mt-20 pb-10">

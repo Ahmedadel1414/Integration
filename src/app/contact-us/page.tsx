@@ -29,7 +29,7 @@ const Page = () => {
             </p>
             <p className="m-auto text-center text-base font-medium sm:text-xl md:text-2xl text-white">
               نقوم بمتابعة التجديدات و توفير عروض جديدو عند التجديد لايجاد بدائل
-              دائمه للعملاء
+              دائمه للعملاء.
             </p>
           </div>
         </div>

@@ -1,16 +1,17 @@
 import InsuranceCardsContainer from "@/components/cards/InsuranceCardsContainer";
 import { insuranceCategories } from "@/constants/insurance";
 import Link from "next/link";
+import ImagSlider from "../imagSlider/ImagSlider";
 
 const InsuranceTypes = () => {
   return (
     <>
       <section className="container py-10">
         <div className="text-center">
-          <h2 className="text-2xl sm:text-3xl md:text-5xl font-bold text-gray-800 mb-4">
+          <h2 className="text-2xl sm:text-3xl md:text-5xl font-bold text-primary mb-4">
             التغطيات التأمينية التى تقدمها الشركة
           </h2>
-          <div className="w-24 h-1 bg-primary mx-auto rounded-full"></div>
+          <div className="w-24 h-1 bg-secondary mx-auto rounded-full"></div>
         </div>
 
         <div className="grid grid-cols-[repeat(auto-fill,minmax(230px,1fr))] w-full gap-10 py-10 sm:grid-cols-[repeat(auto-fill,minmax(460px,1fr))]">
@@ -24,6 +25,7 @@ const InsuranceTypes = () => {
           ))}
         </div>
         <div className="text-center">
+          <ImagSlider />
           <Link
             className="inline-block bg-primary text-white px-11 py-3 rounded-md m-auto hover:bg-opacity-80"
             href="/our-services"

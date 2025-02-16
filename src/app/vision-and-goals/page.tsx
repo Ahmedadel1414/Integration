@@ -19,14 +19,15 @@ const page = () => {
           <h1 className="m-auto text-center text-3xl font-semibold pt-5 xs:text-4xl sm:text-5xl text-white">
             الرؤية و الأهداف
           </h1>
-          <div className="space-y-3">
-            <p className="m-auto text-center text-base font-medium sm:text-xl md:text-2xl text-white">
-              ان رؤيتنا هي شركات ناجحة مع عملائنا علي أساس متين من قيمتنا
-              المضافة, و الوصول الي حصة كبيرة من السوق المصري.
+          <div className="space-y-3 max-w-[85%] mx-auto">
+            <p className="m-auto text-center text-xl font-medium md:text-2xl text-white">
+              ان رؤيتنا هي شراكات ناجحة مع عملائنا علي أساس متين من قيمتنا
+              المضافة, والعمل على بناء روابط قوية مع عملائنا على اساس قوى و واضح
+              و الوصول إلى اسم مميز فى السوق المصرى.
             </p>
-            <p className="m-auto text-center text-base font-medium sm:text-xl md:text-2xl text-white">
-              أهدافنا هي التزامنا نحو تقديم أفضل مستويات الخدم’ التأمينية بالسوق
-              المصري.
+            <p className="m-auto text-center text-xl font-medium md:text-2xl text-white">
+              أهدافنا هي التزامنا نحو تقديم أفضل مستويات الخدمات التأمينية
+              بالسوق المصري.
             </p>
           </div>
         </div>

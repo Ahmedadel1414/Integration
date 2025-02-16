@@ -30,7 +30,7 @@ const Footer = () => {
           {/* Contact Info Section */}
           <div className="lg:col-span-2 grid grid-cols-1 md:grid-cols-2 gap-8 text-center">
             <div>
-              <h3 className="text-lg font-semibold text-primary mb-4">
+              <h3 className="text-lg font-semibold text-secondary mb-4">
                 تواصل معنا
               </h3>
               <div className="space-y-3 text-sm text-gray-600">
@@ -49,7 +49,7 @@ const Footer = () => {
             </div>
 
             <div>
-              <h3 className="text-lg font-semibold text-primary mb-4">
+              <h3 className="text-lg font-semibold text-secondary mb-4">
                 العنوان
               </h3>
               <p className="text-sm text-gray-600">
@@ -60,7 +60,9 @@ const Footer = () => {
 
           {/* Social Links Section */}
           <div className="lg:col-span-1 text-center">
-            <h3 className="text-lg font-semibold text-primary mb-4">تابعنا</h3>
+            <h3 className="text-lg font-semibold text-secondary mb-4">
+              تابعنا
+            </h3>
             <div className="flex flex-row justify-center space-x-4 space-x-reverse">
               <Link
                 href="#"

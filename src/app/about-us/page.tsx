@@ -40,12 +40,12 @@ const Page = () => {
         </div>
       </div>
 
-      <div className="py-28">
-        <ImagSlider />
-      </div>
-
       <div className="container py-10">
         <AboutUs displayHeading={false} />
+      </div>
+
+      <div className="py-2">
+        <ImagSlider />
       </div>
 
       <div className="text-center mb-10">
