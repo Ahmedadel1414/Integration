@@ -24,7 +24,10 @@ export default {
         danger: "",
       },
       textColor: {},
-      fontFamily: {},
+      fontFamily: {
+        cairo: ["var(--font-cairo)", "sans-serif"],
+        cen_mt: ["var(--font-cen_mt)", "sans-serif"],
+      },
     },
     screens: {
       xs: "480px",

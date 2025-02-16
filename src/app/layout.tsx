@@ -1,23 +1,33 @@
 import type { Metadata } from "next";
-import { Cairo, Geist, Geist_Mono } from "next/font/google";
-import "@/styles/globals.css";
+import { Cairo } from "next/font/google";
+
+import localFont from "next/font/local";
+import Script from "next/script";
+
 import Header from "@/components/header/Header";
 import Footer from "@/components/footer/Footer";
-import Script from "next/script";
+
+import "@/styles/globals.css";
 
 const cairo = Cairo({
   subsets: ["arabic", "latin"],
   display: "swap",
+  variable: "--font-cairo",
 });
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
+const tw_cen_mt = localFont({
+  src: [
+    {
+      path: "../fonts/Tw Cen MT.ttf",
+      weight: "400",
+    },
+    {
+      path: "../fonts/Tw Cen MT W01 Extra Bold Italic.ttf",
+      weight: "700",
+      style: "italic",
+    },
+  ],
+  variable: "--font-cen_mt",
 });
 
 export const metadata: Metadata = {
@@ -74,9 +84,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="ar" dir="rtl">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased ${cairo.className}`}
-      >
+      <body className={`${cairo.variable} ${tw_cen_mt.variable} antialiased`}>
         <Script
           id="google-tag-manager"
           strategy="afterInteractive"

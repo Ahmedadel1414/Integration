@@ -9,7 +9,7 @@ const Nav = () => {
 
   return (
     <nav
-      className="text-lg max-[850px]:text-base hidden md:flex"
+      className="text-lg max-[850px]:text-base hidden lg:flex"
       aria-label="breadcrumb"
     >
       <ul className="flex justify-center gap-x-4">

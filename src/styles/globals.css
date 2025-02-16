@@ -4,6 +4,10 @@
 @tailwind utilities;
 
 /* Fixed background image of the company's logo */
+* {
+  font-family: var(--font-cairo);
+}
+
 body {
   background-image: url("./logo.png");
   background-size: 40%;
