@@ -32,7 +32,7 @@ const page = () => {
           </div>
         </div>
       </div>
-      <div className="min-h-screen bg-gray-50">
+      <div className="bg-gray-50">
         <div className="container mx-auto px-4 py-12">
           <div
             className="max-w-4xl mx-auto space-y-8 bg-white rounded-2xl shadow-lg p-8"
@@ -57,7 +57,7 @@ const page = () => {
                 <li>
                   <span className="font-semibold">
                     تقديم خدمات تأمينية متكاملة:
-                  </span>{" "}
+                  </span>
                   تلبي احتياجات عملائنا وفقًا لأعلى معايير الجودة والموثوقية.
                 </li>
                 <li>

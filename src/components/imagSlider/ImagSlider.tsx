@@ -41,7 +41,7 @@ const ImagSlider = () => {
   };
 
   return (
-    <section className="space-y-14 my-20">
+    <section className="space-y-14 py-20">
       <div className="text-center">
         <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-primary mb-4">
           موثوق بنا بشركاء النجاح
@@ -60,7 +60,7 @@ const ImagSlider = () => {
                   height={96}
                   alt={slider.sliderAlt}
                   loading="eager"
-                  className="mix-blend-multiply object-contain h-24 px-1"
+                  className="mix-blend-multiply bg-transparent filter object-contain h-24 px-1"
                 />
               </div>
             ))}

@@ -15,7 +15,7 @@ const Page = () => {
   }, []);
 
   return (
-    <section>
+    <section className="">
       <div className="relative -z-50 bg-[url(/assets/who-are-we.jpg)] filter w-full bg-cover bg-center px-0 py-[150px]">
         <div className="bg-black w-full h-full top-0 left-0 absolute -z-40 opacity-75"></div>
         <div className="space-y-8">
@@ -40,15 +40,15 @@ const Page = () => {
         </div>
       </div>
 
-      <div className="container py-10">
+      <div className="container py-10 bg-white">
         <AboutUs displayHeading={false} />
       </div>
 
-      <div className="py-2">
+      <div className="py-2 bg-white">
         <ImagSlider />
       </div>
 
-      <div className="text-center mb-10">
+      <div className="text-center pb-10 bg-white">
         <Link
           className="inline-block bg-primary text-white px-11 py-3 rounded-md m-auto hover:bg-opacity-80"
           href="/contact-us"

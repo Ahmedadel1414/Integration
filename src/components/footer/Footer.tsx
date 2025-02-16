@@ -1,5 +1,5 @@
 import Link from "next/link";
-import Logo from "../logo/Logo";
+import Image from "next/image";
 
 const Footer = () => {
   return (
@@ -8,8 +8,16 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 text-right">
           {/* Logo and Legal Links Section */}
           <div className="flex flex-col items-center md:items-start col-span-1 lg:col-span-1">
-            <div className="mb-5">
-              <Logo />
+            <div className="mb-2">
+              <Link href={"/"}>
+                <Image
+                  className="w-full max-w-[200px] lg:max-w-[250px]"
+                  src={"/assets/logos/hd-logo.jpeg"}
+                  alt="Integration Logo"
+                  width={300}
+                  height={100}
+                />
+              </Link>
             </div>
             <div className="flex flex-col space-y-3 text-sm mb-4 md:mb-0">
               <Link
