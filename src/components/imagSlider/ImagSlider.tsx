@@ -9,12 +9,12 @@ const ImagSlider = () => {
   const settings = {
     dots: false,
     arrows: false,
-    infinite: sliderInfo.length > 8,
+    infinite: true,
     slidesToShow: Math.min(sliderInfo.length, 8),
     slidesToScroll: 1,
     autoplay: true,
-    speed: 1000,
-    autoplaySpeed: -10000,
+    speed: 5000,
+    autoplaySpeed: 0,
     cssEase: "linear",
     centerMode: true,
     centerPadding: "0px",
@@ -60,7 +60,7 @@ const ImagSlider = () => {
                   height={96} // Ensures uniform height
                   alt={slider.sliderUlt}
                   loading="eager"
-                  className="mix-blend-multiply object-contain h-24" // Forces image consistency
+                  className="mix-blend-multiply object-contain h-24 px-1" // Forces image consistency
                 />
               </div>
             ))}
