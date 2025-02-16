@@ -56,11 +56,11 @@ const ImagSlider = () => {
               <div key={index} className="">
                 <Image
                   src={slider.sliderSrc}
-                  width={120} // Ensures uniform width
-                  height={96} // Ensures uniform height
+                  width={120}
+                  height={96}
                   alt={slider.sliderUlt}
                   loading="eager"
-                  className="mix-blend-multiply object-contain h-24 px-1" // Forces image consistency
+                  className="mix-blend-multiply object-contain h-24 px-1"
                 />
               </div>
             ))}
@@ -70,5 +70,4 @@ const ImagSlider = () => {
     </section>
   );
 };
-
 export default ImagSlider;
