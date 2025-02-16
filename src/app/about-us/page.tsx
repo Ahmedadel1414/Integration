@@ -2,7 +2,7 @@
 import { useEffect } from "react";
 import AboutUs from "@/components/about-us/AboutUs";
 import Link from "next/link";
-import TrustedBy from "@/components/Trusted-by/TrustedBy";
+import ImagSlider from "@/components/imagSlider/ImagSlider";
 
 const Page = () => {
   useEffect(() => {
@@ -41,7 +41,7 @@ const Page = () => {
       </div>
 
       <div className="py-28">
-        <TrustedBy />
+        <ImagSlider />
       </div>
 
       <div className="container py-10">

@@ -1,0 +1,74 @@
+"use client";
+import Image from "next/image";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import { sliderInfo } from "@/constants/ImagSliderInfo";
+import Slider from "react-slick";
+
+const ImagSlider = () => {
+  const settings = {
+    dots: false,
+    arrows: false,
+    infinite: sliderInfo.length > 8,
+    slidesToShow: Math.min(sliderInfo.length, 8),
+    slidesToScroll: 1,
+    autoplay: true,
+    speed: 1000,
+    autoplaySpeed: -10000,
+    cssEase: "linear",
+    centerMode: true,
+    centerPadding: "0px",
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: Math.min(sliderInfo.length, 6),
+        },
+      },
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: Math.min(sliderInfo.length, 4),
+        },
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: Math.min(sliderInfo.length, 2),
+        },
+      },
+    ],
+  };
+
+  return (
+    <section>
+      <div className="text-center pb-20">
+        <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-800 mb-4">
+          موثوق بنا من قبل شركات التأمين الرائدة فى السوق المصرى
+        </h2>
+        <div className="w-24 h-1 bg-primary mx-auto rounded-full"></div>
+      </div>
+
+      <div className="py-5 bg-gray-100">
+        <div className=" mx-auto px-4">
+          <Slider {...settings}>
+            {sliderInfo.map((slider, index) => (
+              <div key={index} className="">
+                <Image
+                  src={slider.sliderSrc}
+                  width={120} // Ensures uniform width
+                  height={96} // Ensures uniform height
+                  alt={slider.sliderUlt}
+                  loading="eager"
+                  className="mix-blend-multiply object-contain h-24" // Forces image consistency
+                />
+              </div>
+            ))}
+          </Slider>
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default ImagSlider;
