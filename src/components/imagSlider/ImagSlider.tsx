@@ -1,9 +1,9 @@
 "use client";
 import Image from "next/image";
+import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { sliderInfo } from "@/constants/ImagSliderInfo";
-import Slider from "react-slick";
 
 const ImagSlider = () => {
   const settings = {
@@ -53,7 +53,7 @@ const ImagSlider = () => {
         <div className=" mx-auto px-4">
           <Slider {...settings}>
             {sliderInfo.map((slider, index) => (
-              <div key={index} className="">
+              <div key={index}>
                 <Image
                   src={slider.sliderSrc}
                   width={120}
