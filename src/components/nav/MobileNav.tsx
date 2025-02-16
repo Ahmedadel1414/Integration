@@ -9,7 +9,7 @@ const MobileNav = () => {
   const pathname = usePathname();
 
   return (
-    <section className="md:hidden">
+    <section className="lg:hidden">
       <div
         onClick={() => {
           setIsHidden((prev) => !prev);

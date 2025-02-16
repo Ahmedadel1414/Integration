@@ -6,19 +6,19 @@ const Logo = () => {
   return (
     <div>
       <Link href="/">
-        <div className="flex text-center content-center">
-          <div>
-            <h3 className="ml-3 text-primary text-lg font-bold xs:text-md lg:text-4xl xs:font-black italic mb-1">
+        <div className="flex content-center text-center">
+          <div className="ml-3">
+            <h3 className="text-[#104797] text-3xl font-bold lg:text-4xl font-cen_mt italic tracking-wide">
               Integration
             </h3>
-            <p className="ml-3 text-gray-700 text-xs font-light lg:text-sm">
+            <p className="text-gray-500 text-xs lg:text-xs font-cen_mt tracking-widest">
               Insurance Brokerage (S.A.E)
             </p>
-            <p className="ml-3 text-gray-700 text-xs font-light lg:text-xs">
+            <p className="text-gray-500 text-sm font-cen_mt tracking-widest">
               انتجريشن لوساطة التأمين (ش.م.م)
             </p>
           </div>
-          <div className="relative flex flex-col items-center before:content-[''] before:bg-gray-300 before:w-[1px] before:h-[90%] before:absolute before:-right-1 before:top-1/2 before:-translate-y-1/2 z-50">
+          <div className="relative flex flex-col items-center before:content-[''] before:bg-gray-400 before:w-[1px] before:h-[90%] before:absolute before:-right-1 before:top-1/2 before:-translate-y-1/2 z-50">
             <Image
               src="/assets/logos/logo.PNG"
               alt="logo"
