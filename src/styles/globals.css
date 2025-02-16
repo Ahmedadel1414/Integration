@@ -2,6 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Fixed background image of the company's logo */
 body {
   background-image: url("/assets/logos/logo.png");
   background-size: 40%;
