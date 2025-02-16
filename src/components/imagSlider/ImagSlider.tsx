@@ -43,9 +43,7 @@ const ImagSlider = () => {
   return (
     <section className="space-y-14 py-20">
       <div className="text-center">
-        <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-primary mb-4">
-          موثوق بنا بشركاء النجاح
-        </h2>
+        <h2 className="text-4xl font-bold text-primary mb-4">شركاء النجاح</h2>
         <div className="w-24 h-1 bg-secondary mx-auto rounded-full"></div>
       </div>
 
