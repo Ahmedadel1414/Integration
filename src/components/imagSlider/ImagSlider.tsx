@@ -1,18 +1,11 @@
 "use client";
 
-import { sliderInfo } from "@/constants/ImagSliderInfo";
-
 import Image from "next/image";
 import Slider from "react-slick";
-<<<<<<< HEAD
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
-import { sliderInfo } from "@/constants/ImagSliderInfo";
-=======
 
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
->>>>>>> 4c5f3e72b1678a139520afaa15f38f69f7593f7b
+import { sliderInfo } from "@/constants/ImagSliderInfo";
 
 const ImagSlider = () => {
   const settings = {
