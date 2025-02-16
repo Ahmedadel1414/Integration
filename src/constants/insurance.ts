@@ -7,15 +7,15 @@ type Insurances = {
 export const insuranceCategories: Insurances[] = [
   {
     insuranceSrc: "/assets/insurance-imgs/insurance (8).webp",
-    insuranceTitle: "- تأمين الممتلكات و المسئوليات.",
+    insuranceTitle: "- تأمين الممتلكات.",
     insuranceDescription:
-      "يغطي الأضرار التي تصيب الممتلكات أو المسؤولية القانونية تجاه الآخرين في حالة وقوع حوادث.",
+      "يغطى التأمين على الأصول والممتلكات مثل ( الحريق – السطو- تهدم المباني ) الخاصة بالانشطة الصناعية والتجارية.",
   },
   {
     insuranceSrc: "/assets/insurance-imgs/insurance (9).webp",
-    insuranceTitle: "- تأمين الحوادث المتنوعة.",
+    insuranceTitle: "- تأمين الحوادث المتنوعة و المسئوليات.",
     insuranceDescription:
-      "يشمل الحوادث الشخصية، إصابات العمل، والأضرار غير المتوقعة الأخرى.",
+      "يشمل الحوادث الشخصية – خيانة الأمانة – نقل النقدية (السرقة بالاكراه)  والمسئوليات بأنواعها .",
   },
   {
     insuranceSrc: "/assets/insurance-imgs/insurance (10).webp",
@@ -44,8 +44,7 @@ export const insuranceCategories: Insurances[] = [
   {
     insuranceSrc: "/assets/insurance-imgs/insurance (1).webp",
     insuranceTitle: "- تأمين مخاطر الائتمان.",
-    insuranceDescription:
-      "يحمي الشركات والأفراد من مخاطر عدم سداد القروض أو الديون المستحقة.",
+    insuranceDescription: "يحمي من مخاطر عدم سداد القروض و الديون المستحقة.",
   },
   // {
   //   insuranceSrc: "/assets/insurance-imgs/insurance (2).webp",
@@ -87,12 +86,24 @@ export const insuranceCategories: Insurances[] = [
     insuranceSrc: "/assets/insurance-imgs/insurance (14).webp",
     insuranceTitle: "- تأمين المنتجات.",
     insuranceDescription:
-      "يوفر تأمين المنتجات حماية محلية ودولية للأفراد والشركات، مما يقلل الخسائر ويضمن استمرارية الأعمال بأمان.",
+      "يغطى الخطر الذى قد يصيب الافراد او الجهات من ضرر استخدام منتج معين.",
   },
   {
     insuranceSrc: "/assets/insurance-imgs/insurance (15).webp",
     insuranceTitle: "- تأمين القطع الثمينة.",
     insuranceDescription:
       "يوفر حماية شاملة للقطع الثمينة مثل المجوهرات، الساعات الفاخرة، والتحف، مع تغطية محلية ودولية.",
+  },
+  {
+    insuranceSrc: "/assets/insurance-imgs/insurance (16).webp",
+    insuranceTitle: "- تأمين حماية الموظفين والمديرين.",
+    insuranceDescription:
+      "يغطى التصرفات الناتجة بصفتهم بسبب اتخاذ قرارات خاطئة ينتج عنها ضرر للجهه التي يعملون بها.",
+  },
+  {
+    insuranceSrc: "/assets/insurance-imgs/insurance (17).webp",
+    insuranceTitle: "- تأمين ضد الهجمات السيبرانية والاختراقات الالكترونية.",
+    insuranceDescription:
+      "توفر الحماية من الاختراقات والهجمات الالكترونية التي ينتج عنها ضرر من سرقة البيانات والمعلومات مثل البنوك والمصانع والشركات.",
   },
 ];

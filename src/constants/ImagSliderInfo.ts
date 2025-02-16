@@ -1,55 +1,55 @@
 type SliderInfo = {
   sliderSrc: string;
-  sliderUlt: string;
+  sliderAlt: string;
 };
 
 export const sliderInfo: SliderInfo[] = [
   {
-    sliderSrc: "/assets/trust/trust (1).webp",
-    sliderUlt: "Allianz company",
+    sliderSrc: "/assets/trust/trust (2).jpg",
+    sliderAlt: "شركة المهندس للتأمين",
   },
   {
-    sliderSrc: "/assets/trust/trust (2).webp",
-    sliderUlt: "شركة المهندس للتأمين",
+    sliderSrc: "/assets/trust/trust (3).jpg",
+    sliderAlt: "AXA Egypt company",
   },
   {
-    sliderSrc: "/assets/trust/trust (3).webp",
-    sliderUlt: "AXA Egypt company",
+    sliderSrc: "/assets/trust/trust (5).jpg",
+    sliderAlt: "مصر للتأمينات",
   },
   {
-    sliderSrc: "/assets/trust/trust (4).webp",
-    sliderUlt: "mada insurance company",
+    sliderSrc: "/assets/trust/trust (6).jpg",
+    sliderAlt: "اورينت للتامين ",
   },
   {
-    sliderSrc: "/assets/trust/trust (5).webp",
-    sliderUlt: "مصر للتأمينات",
-  },
-  {
-    sliderSrc: "/assets/trust/trust (6).webp",
-    sliderUlt: "اورينت للتامين ",
-  },
-  {
-    sliderSrc: "/assets/trust/trust (7).webp",
-    sliderUlt: "SARWA insurance company",
-  },
-  {
-    sliderSrc: "/assets/trust/trust (8).webp",
-    sliderUlt: "SALAMA insurance company",
+    sliderSrc: "/assets/trust/trust (7).jpg",
+    sliderAlt: "SARWA insurance company",
   },
   {
     sliderSrc: "/assets/trust/trust (9).webp",
-    sliderUlt: "المصريه للتأمين التكافلي",
+    sliderAlt: "المصريه للتأمين التكافلي",
   },
   {
-    sliderSrc: "/assets/trust/trust (10).webp",
-    sliderUlt: "مصر للتأمين التكافلي",
+    sliderSrc: "/assets/trust/trust (12).jpg",
+    sliderAlt: "SARWA LIFE company",
+  },
+  {
+    sliderSrc: "/assets/trust/trust (1).svg",
+    sliderAlt: "Allianz company",
+  },
+  {
+    sliderSrc: "/assets/trust/trust (8).webp",
+    sliderAlt: "SALAMA insurance company",
+  },
+  {
+    sliderSrc: "/assets/trust/trust (4).webp",
+    sliderAlt: "mada insurance company",
   },
   {
     sliderSrc: "/assets/trust/trust (11).webp",
-    sliderUlt: "ROYAL insurance company",
+    sliderAlt: "ROYAL insurance company",
   },
   {
-    sliderSrc: "/assets/trust/trust (12).webp",
-    sliderUlt: "SARWA LIFE company",
+    sliderSrc: "/assets/trust/trust (10).webp",
+    sliderAlt: "مصر للتأمين التكافلي",
   },
 ];

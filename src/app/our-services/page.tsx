@@ -56,16 +56,16 @@ const Page = () => {
       <div className="container">
         <div className="py-5 pt-10">
           <div className="text-center">
-            <h2 className="text-4xl md:text-5xl font-bold text-gray-800 mb-4">
+            <h2 className="text-2xl sm:text-3xl md:text-5xl font-bold text-primary mb-4">
               التغطيات التأمينية التى تقدمها الشركة
             </h2>
-            <div className="w-24 h-1 bg-primary mx-auto rounded-full"></div>
+            <div className="w-24 h-1 bg-secondary mx-auto rounded-full"></div>
           </div>
           <div className="grid place-items-center grid-cols-[repeat(auto-fill,minmax(230px,1fr))] w-full gap-10 py-10 sm:grid-cols-[repeat(auto-fill,minmax(460px,1fr))]">
             {insuranceCategories.map((insurance, index) => (
               <div
                 key={index}
-                className="flex flex-col border border-solid border-gray-200 shadow-lg shadow-zinc-300 rounded-lg overflow-hidden"
+                className="flex flex-col bg-white border border-solid border-gray-200 shadow-lg shadow-zinc-300 rounded-lg overflow-hidden"
               >
                 <Image
                   alt="Insurance Type"

@@ -7,5 +7,6 @@ export const navBarr: NavSections[] = [
   { section: "من نحن", url: "about-us" },
   { section: "خدماتنا", url: "our-services" },
   { section: "الرؤيه و الاهداف", url: "vision-and-goals" },
+  { section: "التزاماتنا", url: "terms-and-conditions" },
   { section: "اتصل بنا", url: "contact-us" },
 ];

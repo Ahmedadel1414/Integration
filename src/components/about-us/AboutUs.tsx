@@ -10,10 +10,10 @@ const AboutUs = ({ displayHeading = true }: AboutUsProps) => {
     <div className="max-w-7xl mx-auto px-4 container">
       {displayHeading && (
         <div className="text-center mb-10">
-          <h2 className="text-4xl md:text-5xl font-bold text-gray-800 mb-4">
+          <h2 className="text-4xl md:text-5xl font-bold text-primary mb-4">
             من نحن
           </h2>
-          <div className="w-24 h-1 bg-primary mx-auto rounded-full"></div>
+          <div className="w-24 h-1 bg-secondary mx-auto rounded-full"></div>
         </div>
       )}
 
