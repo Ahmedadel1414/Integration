@@ -1,8 +1,5 @@
 @tailwind base;
 @tailwind components;
-<<<<<<< HEAD
-@tailwind utilities;
-=======
 @tailwind utilities;
 
 /* Fixed background image of the company's logo */
@@ -20,4 +17,3 @@ body {
   background-color: rgba(255, 255, 255, 0.8);
   background-blend-mode: overlay;
 }
->>>>>>> 4c5f3e72b1678a139520afaa15f38f69f7593f7b
