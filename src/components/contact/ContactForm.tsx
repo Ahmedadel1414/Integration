@@ -5,7 +5,7 @@ const ContactForm = () => {
         الاسم
       </label>
       <input
-        className="p-3 bg-gray-200 rounded-lg mb-5 "
+        className="p-3 bg-gray-200 rounded-lg mb-5 border-[2px] border-primary outline-none focus:border-[3px]"
         type="name"
         name="name"
         required
@@ -14,7 +14,7 @@ const ContactForm = () => {
         البريد الالكتروني
       </label>
       <input
-        className="p-3 bg-gray-200 rounded-lg mb-5 "
+        className="p-3 bg-gray-200 rounded-lg mb-5 border-[2px] border-primary outline-none focus:border-[3px]"
         type="email"
         name="email"
         required
@@ -23,7 +23,7 @@ const ContactForm = () => {
         الرساله
       </label>
       <textarea
-        className="px-3 pb-32 pt-3 bg-gray-200 rounded-lg "
+        className="px-3 pb-32 pt-3 bg-gray-200 rounded-lg border-[2px] border-primary outline-none focus:border-[3px]"
         name="message"
         required
       ></textarea>

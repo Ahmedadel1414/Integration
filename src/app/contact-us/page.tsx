@@ -5,7 +5,7 @@ const Page = () => {
   return (
     <section>
       <div className="relative -z-50  w-full bg-cover bg-center px-0 py-[150px]">
-        <div className="bg-black w-full h-full top-0 left-0 absolute -z-40 opacity-60"></div>
+        <div className="bg-black w-full h-full top-0 left-0 absolute -z-40 opacity-40"></div>
 
         <div className="absolute inset-0 -z-50">
           <Image

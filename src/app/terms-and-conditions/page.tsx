@@ -8,14 +8,14 @@ export const metadata: Metadata = {
 
 const TermsAndConditions = () => {
   return (
-    <div className="min-h-screen bg-gray-50">
+    <div className="min-h-screen">
       <div className="container mx-auto px-4 py-12">
         <h1 className="text-4xl font-bold text-center mb-16 text-primary">
           الشروط والأحكام
         </h1>
 
         <div
-          className="max-w-4xl mx-auto space-y-8 bg-white rounded-2xl shadow-lg p-8"
+          className="max-w-4xl mx-auto space-y-8 border-[4px] border-primary shadow-lg p-8"
           dir="rtl"
         >
           {/* التزاماتنا */}
@@ -23,7 +23,7 @@ const TermsAndConditions = () => {
             <h2 className="text-2xl font-bold text-primary">إلتزاماتنا</h2>
             <p className="text-gray-600 mb-4">
               تم تحديدها من خلال القانون واللوائح التنفيذية والقرارات التنظيمية
-              الصادرة عن الهيئة العامة للرقابة المالية ومنها على سبيل الحصر:
+              الصادرة عن الهيئة العامة للرقابة المالية ومنها على سبيل المثال:
             </p>
             <ul className="space-y-3 text-gray-600 list-disc list-inside pr-4">
               <li>
@@ -58,12 +58,6 @@ const TermsAndConditions = () => {
               <li>تقديم البيانات الصحيحة عند طلب إصدار أو تجديد أي وثيقة.</li>
               <li>موافاتنا بأي مستندات نحتاجها تدعم إدارة الملف التأميني.</li>
               <li>الإجابة على أي استفسارات نطلبها.</li>
-              <li>
-                الامتناع عن التدخل في التفاوض مع شركات التأمين أو تفويض وسيط
-                تأميني آخر، حيث أننا في هذه المرحلة تحديداً نحتاج لتوحيد خط
-                التفاوض دون تدخل من طرف آخر يؤثر سلباً على نجاح سير العمل الذي
-                نصبو إليه معاً.
-              </li>
             </ul>
           </section>
 
@@ -71,7 +65,7 @@ const TermsAndConditions = () => {
           <section className="mt-12 pt-8 border-t border-gray-200">
             <div className="text-center">
               <p className="text-gray-600">للتواصل معنا:</p>
-              <p className="text-primary font-semibold mt-2">
+              <p className="text-secondary font-semibold mt-2">
                 <Link
                   className="underline underline-offset-2"
                   href={"mailto:director@iibeg.com"}

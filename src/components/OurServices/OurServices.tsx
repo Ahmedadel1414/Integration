@@ -7,7 +7,7 @@ type OurServicesProps = {
 
 const OurServices = ({ displayHeading = true }: OurServicesProps) => {
   return (
-    <section className={`bg-gray-100 ${displayHeading ? "py-10" : "pb-10"}`}>
+    <section className={`${displayHeading ? "py-10" : "pb-10"}`}>
       <div className="container text-center">
         {displayHeading && (
           <div>

@@ -35,7 +35,7 @@ const InsuranceTypes = () => {
             المزيد
           </Link>
         </div>
-        <div className="text-center bg-white pb-10">
+        <div className="text-center pb-10">
           <ImagSlider />
         </div>
       </section>

@@ -14,7 +14,7 @@ const page = () => {
             className="w-full h-full object-cover object-bottom"
           />
         </div>
-        <div className="bg-black w-full h-full top-0 left-0 absolute -z-40 opacity-70"></div>
+        <div className="bg-black w-full h-full top-0 left-0 absolute -z-40 opacity-40"></div>
         <div className="space-y-8">
           <h1 className="m-auto text-center text-3xl font-semibold pt-5 xs:text-4xl sm:text-5xl text-white">
             الرؤية و الأهداف
@@ -32,10 +32,10 @@ const page = () => {
           </div>
         </div>
       </div>
-      <div className="bg-gray-50">
+      <div>
         <div className="container mx-auto px-4 py-12">
           <div
-            className="max-w-4xl mx-auto space-y-8 bg-white rounded-2xl shadow-lg p-8"
+            className="max-w-4xl mx-auto space-y-8 border-[4px] border-primary shadow-lg p-8"
             dir="rtl"
           >
             {/* الرؤية */}
@@ -98,7 +98,7 @@ const page = () => {
             <section className="mt-12 pt-8 border-t border-gray-200">
               <div className="text-center">
                 <p className="text-gray-600">للتواصل معنا:</p>
-                <p className="text-primary font-semibold mt-2">
+                <p className="text-secondary font-semibold mt-2">
                   <Link
                     className="underline underline-offset-2"
                     href={"mailto:director@iibeg.com"}

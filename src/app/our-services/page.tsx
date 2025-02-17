@@ -1,22 +1,9 @@
-"use client";
-
 import { insuranceCategories } from "@/constants/insurance";
-import { useEffect } from "react";
-
 import OurServices from "@/components/OurServices/OurServices";
 import Image from "next/image";
 import Link from "next/link";
 
 const Page = () => {
-  useEffect(() => {
-    const footer = document.querySelector("footer");
-    footer?.classList.add("bg-gray-100");
-
-    return () => {
-      footer?.classList.remove("bg-gray-100");
-    };
-  }, []);
-
   return (
     <section>
       <div className="relative -z-50 w-full bg-cover px-0 py-[150px]">
@@ -29,7 +16,7 @@ const Page = () => {
             className="w-full h-full object-cover object-bottom"
           />
         </div>
-        <div className="bg-black w-full h-full top-0 left-0 absolute -z-40 opacity-70"></div>
+        <div className="bg-black w-full h-full top-0 left-0 absolute -z-40 opacity-40"></div>
         <div className="space-y-8">
           <h1 className="m-auto text-center text-4xl font-semibold pt-5 xs:text-5xl text-white">
             الخدمات التي نقدمها
@@ -65,7 +52,7 @@ const Page = () => {
             {insuranceCategories.map((insurance, index) => (
               <div
                 key={index}
-                className="flex flex-col bg-white border border-solid border-gray-200 shadow-lg shadow-zinc-300 rounded-lg overflow-hidden"
+                className="flex flex-col bg-white border-[4px] border-solid border-primary  shadow-lg shadow-zinc-300 overflow-hidden transition-all duration-500 hover:-translate-y-5"
               >
                 <Image
                   alt="Insurance Type"

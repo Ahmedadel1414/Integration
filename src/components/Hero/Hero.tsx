@@ -6,11 +6,11 @@ const Hero = () => {
     <section className="min-h-screen text-center text-white flex items-center justify-center flex-col">
       <div className="absolute -z-50 inset-0">
         <Image
-          src="/assets/home.webp"
+          src="/assets/home.jpg"
           alt="hero"
           width={1920}
           height={1080}
-          className="h-screen filter brightness-50 object-cover"
+          className="h-screen filter brightness-75 object-cover"
           loading="eager"
         />
       </div>

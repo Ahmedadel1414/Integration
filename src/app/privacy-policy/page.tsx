@@ -8,14 +8,14 @@ export const metadata: Metadata = {
 
 const PrivacyPolicy = () => {
   return (
-    <div className="min-h-screen bg-gray-50">
+    <div className="min-h-screen">
       <div className="container mx-auto px-4 py-12">
         <h1 className="text-4xl font-bold text-center mb-16 text-primary">
           سياسة الخصوصية
         </h1>
 
         <div
-          className="max-w-4xl mx-auto space-y-8 bg-white rounded-2xl shadow-lg p-8"
+          className="max-w-4xl mx-auto space-y-8 border-[4px] border-primary shadow-lg p-8"
           dir="rtl"
         >
           {/* جمع المعلومات */}
@@ -25,7 +25,10 @@ const PrivacyPolicy = () => {
               نحن نجمع المعلومات التي تقدمها لنا عند استخدام خدماتنا، وتشمل:
             </p>
             <ul className="space-y-3 text-gray-600 list-disc list-inside pr-4">
-              <li>المعلومات الشخصية (الاسم، العنوان، رقم الهاتف، البريد الإلكتروني)</li>
+              <li>
+                المعلومات الشخصية (الاسم، العنوان، رقم الهاتف، البريد
+                الإلكتروني)
+              </li>
               <li>معلومات الشركة أو المؤسسة التي تمثلها</li>
               <li>المعلومات المتعلقة بالتأمين والمطالبات</li>
               <li>المعلومات المالية اللازمة لإتمام المعاملات</li>
@@ -34,7 +37,9 @@ const PrivacyPolicy = () => {
 
           {/* استخدام المعلومات */}
           <section className="space-y-4">
-            <h2 className="text-2xl font-bold text-primary">استخدام المعلومات</h2>
+            <h2 className="text-2xl font-bold text-primary">
+              استخدام المعلومات
+            </h2>
             <p className="text-gray-600 mb-4">
               نستخدم المعلومات التي نجمعها للأغراض التالية:
             </p>
@@ -64,7 +69,7 @@ const PrivacyPolicy = () => {
           <section className="mt-12 pt-8 border-t border-gray-200">
             <div className="text-center">
               <p className="text-gray-600">للتواصل معنا:</p>
-              <p className="text-primary font-semibold mt-2">
+              <p className="text-secondary font-semibold mt-2">
                 <Link
                   className="underline underline-offset-2"
                   href={"mailto:director@iibeg.com"}
