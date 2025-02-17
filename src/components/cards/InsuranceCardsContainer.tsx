@@ -36,7 +36,8 @@ const InsuranceCardsContainer = ({
         src={insuranceSrc}
         width={500}
         height={500}
-        className="w-full"
+        className="aspect-[1.3]"
+        loading="lazy"
       />
 
       <h3 className="mx-auto text-xl font-semibold py-5">{insuranceTitle}</h3>
