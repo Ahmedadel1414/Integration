@@ -1,7 +1,11 @@
-import { insuranceCategories } from "@/constants/insurance";
-import OurServices from "@/components/OurServices/OurServices";
-import Image from "next/image";
+"use client";
+
 import Link from "next/link";
+import Image from "next/image";
+import OurServices from "@/components/OurServices/OurServices";
+
+import { insuranceCategories } from "@/constants/insurance";
+import { motion } from "motion/react";
 
 const Page = () => {
   return (
@@ -49,11 +53,39 @@ const Page = () => {
             </h2>
             <div className="w-24 h-1 bg-secondary mx-auto rounded-full"></div>
           </div>
-          <div className="grid grid-cols-[repeat(auto-fill,minmax(230px,1fr))] w-full gap-10 py-10 xl:grid-cols-[repeat(auto-fill,minmax(350px,1fr))] lg:grid-cols-[repeat(auto-fill,minmax(300px,1fr))]">
+          <motion.div
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true }}
+            variants={{
+              hidden: { opacity: 0 },
+              visible: {
+                opacity: 1,
+                transition: {
+                  staggerChildren: 0.2,
+                },
+              },
+            }}
+            className="grid grid-cols-[repeat(auto-fill,minmax(230px,1fr))] w-full gap-10 py-10 xl:grid-cols-[repeat(auto-fill,minmax(350px,1fr))] lg:grid-cols-[repeat(auto-fill,minmax(300px,1fr))]"
+          >
             {insuranceCategories.map((insurance, index) => (
-              <div
+              <motion.div
+                variants={{
+                  hidden: {
+                    opacity: 0,
+                    y: 50,
+                  },
+                  visible: {
+                    opacity: 1,
+                    y: 0,
+                    transition: {
+                      type: "spring",
+                      stiffness: 100,
+                    },
+                  },
+                }}
                 key={index}
-                className="flex flex-col bg-white border-[4px] border-solid border-primary  shadow-lg shadow-zinc-300 overflow-hidden transition-all duration-500 hover:-translate-y-5"
+                className="flex flex-col bg-white border-[4px] border-solid border-primary  shadow-lg shadow-zinc-300 overflow-hidden transition-none duration-500"
               >
                 <Image
                   alt="Insurance Type"
@@ -68,9 +100,9 @@ const Page = () => {
                 <p className="text-center pb-6 px-10 leading-7">
                   {insurance.insuranceDescription}
                 </p>
-              </div>
+              </motion.div>
             ))}
-          </div>
+          </motion.div>
         </div>
 
         <div className="text-center mb-12">

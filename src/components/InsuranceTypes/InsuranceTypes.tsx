@@ -1,7 +1,11 @@
-import InsuranceCardsContainer from "@/components/cards/InsuranceCardsContainer";
-import { insuranceCategories } from "@/constants/insurance";
+"use client";
+
 import Link from "next/link";
 import ImagSlider from "../imagSlider/ImagSlider";
+import InsuranceCardsContainer from "@/components/cards/InsuranceCardsContainer";
+
+import { insuranceCategories } from "@/constants/insurance";
+import { motion } from "motion/react";
 
 const InsuranceTypes = () => {
   return (
@@ -15,7 +19,22 @@ const InsuranceTypes = () => {
             <div className="w-24 h-1 bg-secondary mx-auto rounded-full"></div>
           </div>
 
-          <div className="grid grid-cols-[repeat(auto-fill,minmax(230px,1fr))] w-full gap-10 py-10 xl:grid-cols-[repeat(auto-fill,minmax(350px,1fr))] lg:grid-cols-[repeat(auto-fill,minmax(300px,1fr))]">
+          <motion.div
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true }}
+            variants={{
+              hidden: { opacity: 0 },
+              visible: {
+                opacity: 1,
+                transition: {
+                  staggerChildren: 0.2,
+                  delay: 0.25
+                },
+              },
+            }}
+            className="grid grid-cols-[repeat(auto-fill,minmax(230px,1fr))] w-full gap-10 py-10 xl:grid-cols-[repeat(auto-fill,minmax(350px,1fr))] lg:grid-cols-[repeat(auto-fill,minmax(300px,1fr))]"
+          >
             {insuranceCategories.slice(0, 6).map((ins) => (
               <InsuranceCardsContainer
                 key={ins.insuranceTitle}
@@ -24,7 +43,7 @@ const InsuranceTypes = () => {
                 insuranceDescription={ins.insuranceDescription}
               />
             ))}
-          </div>
+          </motion.div>
         </div>
 
         <div className="text-center mb-5">

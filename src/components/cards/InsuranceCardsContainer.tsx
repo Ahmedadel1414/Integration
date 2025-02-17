@@ -1,5 +1,7 @@
 import Image from "next/image";
 
+import { motion } from "motion/react";
+
 type Insurances = {
   insuranceSrc: string;
   insuranceTitle: string;
@@ -12,20 +14,34 @@ const InsuranceCardsContainer = ({
   insuranceDescription,
 }: Insurances) => {
   return (
-    <>
-      <div className="flex flex-col border-[4px] border-solid border-primary shadow-lg shadow-zinc-300 overflow-hidden bg-white transition-all duration-500 hover:-translate-y-5">
-        <Image
-          alt="Insurance Type"
-          src={insuranceSrc}
-          width={500}
-          height={500}
-          className="w-full"
-        />
+    <motion.div
+      variants={{
+        hidden: {
+          opacity: 0,
+          y: 50,
+        },
+        visible: {
+          opacity: 1,
+          y: 0,
+          transition: {
+            type: "spring",
+            stiffness: 100,
+          },
+        },
+      }}
+      className="flex flex-col border-[4px] border-solid border-primary shadow-lg shadow-zinc-300 overflow-hidden bg-white duration-500 transition-none"
+    >
+      <Image
+        alt="Insurance Type"
+        src={insuranceSrc}
+        width={500}
+        height={500}
+        className="w-full"
+      />
 
-        <h3 className="mx-auto text-xl font-semibold py-5">{insuranceTitle}</h3>
-        <p className="text-center pb-12 px-10">{insuranceDescription}</p>
-      </div>
-    </>
+      <h3 className="mx-auto text-xl font-semibold py-5">{insuranceTitle}</h3>
+      <p className="text-center pb-12 px-10">{insuranceDescription}</p>
+    </motion.div>
   );
 };
 
