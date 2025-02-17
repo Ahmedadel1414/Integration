@@ -13,6 +13,7 @@ const Page = () => {
             alt="Services Section Image"
             width={1600}
             height={476}
+            loading="eager"
             className="w-full h-full object-cover object-bottom"
           />
         </div>
