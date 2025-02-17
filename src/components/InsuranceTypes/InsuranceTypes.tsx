@@ -15,7 +15,7 @@ const InsuranceTypes = () => {
             <div className="w-24 h-1 bg-secondary mx-auto rounded-full"></div>
           </div>
 
-          <div className="grid grid-cols-[repeat(auto-fill,minmax(230px,1fr))] w-full gap-10 py-10 sm:grid-cols-[repeat(auto-fill,minmax(460px,1fr))]">
+          <div className="grid grid-cols-[repeat(auto-fill,minmax(230px,1fr))] w-full gap-10 py-10 xl:grid-cols-[repeat(auto-fill,minmax(350px,1fr))] lg:grid-cols-[repeat(auto-fill,minmax(300px,1fr))]">
             {insuranceCategories.slice(0, 6).map((ins) => (
               <InsuranceCardsContainer
                 key={ins.insuranceTitle}

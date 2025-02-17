@@ -51,15 +51,16 @@ const ImagSlider = () => {
         <div className="mx-auto p-4">
           <Slider {...settings}>
             {sliderInfo.map((slider, index) => (
-              <Image
-                key={index}
-                src={slider.sliderSrc}
-                width={100}
-                height={100}
-                alt={slider.sliderAlt}
-                loading="eager"
-                className="w-[100px] bg-transparent px-1"
-              />
+              <div key={index}>
+                <Image
+                  src={slider.sliderSrc}
+                  alt={slider.sliderAlt}
+                  width={200}
+                  height={100}
+                  loading="lazy"
+                  className="object-contain w-[150px] h-[100px] bg-transparent px-1"
+                />
+              </div>
             ))}
           </Slider>
         </div>

@@ -19,8 +19,9 @@ const InsuranceCardsContainer = ({
           src={insuranceSrc}
           width={500}
           height={500}
-          className="min-w-full"
+          className="w-full"
         />
+
         <h3 className="mx-auto text-xl font-semibold py-5">{insuranceTitle}</h3>
         <p className="text-center pb-12 px-10">{insuranceDescription}</p>
       </div>
