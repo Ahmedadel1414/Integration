@@ -13,7 +13,7 @@ const ImagSlider = () => {
     slidesToShow: Math.min(sliderInfo.length, 8),
     slidesToScroll: 1,
     autoplay: true,
-    speed: 5000,
+    speed: 2000,
     autoplaySpeed: 0,
     cssEase: "linear",
     centerMode: true,
