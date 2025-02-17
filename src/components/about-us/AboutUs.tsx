@@ -1,5 +1,9 @@
-import { introduction1, introduction2 } from "@/constants/aboutUs";
+"use client";
+
 import Image from "next/image";
+
+import { introduction1, introduction2 } from "@/constants/aboutUs";
+import { motion } from "motion/react";
 
 type AboutUsProps = {
   displayHeading?: boolean;
@@ -20,7 +24,23 @@ const AboutUs = ({ displayHeading = true }: AboutUsProps) => {
       {/* About Cards Container */}
       <div className="space-y-8">
         {/* About Card 1 */}
-        <div className="bg-white rounded-2xl shadow-lg overflow-hidden border">
+        <motion.div
+          initial={{
+            x: "-100%",
+            opacity: 0,
+          }}
+          whileInView={{
+            x: 0,
+            opacity: 1,
+          }}
+          transition={{
+            duration: 0.8,
+          }}
+          viewport={{
+            once: true,
+          }}
+          className="bg-white rounded-2xl shadow-lg overflow-hidden border"
+        >
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
             <div className="order-2 lg:order-1 p-8">
               <div className="h-full flex flex-col justify-center space-y-4">
@@ -43,10 +63,26 @@ const AboutUs = ({ displayHeading = true }: AboutUsProps) => {
               />
             </div>
           </div>
-        </div>
+        </motion.div>
 
         {/* About Card 2 */}
-        <div className="bg-white rounded-2xl shadow-lg overflow-hidden border">
+        <motion.div
+          initial={{
+            x: "100%",
+            opacity: 0,
+          }}
+          whileInView={{
+            x: 0,
+            opacity: 1,
+          }}
+          transition={{
+            duration: 0.8,
+          }}
+          viewport={{
+            once: true,
+          }}
+          className="bg-white rounded-2xl shadow-lg overflow-hidden border"
+        >
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
             <div className="h-[300px] lg:h-auto relative">
               <Image
@@ -69,7 +105,7 @@ const AboutUs = ({ displayHeading = true }: AboutUsProps) => {
               </div>
             </div>
           </div>
-        </div>
+        </motion.div>
       </div>
     </div>
   );

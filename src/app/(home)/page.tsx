@@ -10,7 +10,6 @@ const Home = () => {
       <Hero />
       <AboutSection />
       <OurServices />
-      {/* Static */}
       <InsuranceTypes />
       <Contact />
     </>

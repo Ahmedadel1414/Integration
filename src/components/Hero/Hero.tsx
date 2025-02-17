@@ -1,5 +1,9 @@
+"use client";
+
 import Image from "next/image";
 import Link from "next/link";
+
+import { motion } from "motion/react";
 
 const Hero = () => {
   return (
@@ -15,15 +19,50 @@ const Hero = () => {
         />
       </div>
       <div>
-        <h1 className="text-4xl font-bold mb-6 max-w-[600px] sm:text-6xl !leading-snug">
+        <motion.h1
+          initial={{
+            opacity: 0,
+          }}
+          animate={{
+            opacity: 1,
+          }}
+          transition={{
+            duration: 0.8,
+            delay: 0.75,
+          }}
+          className="text-4xl font-bold mb-6 max-w-[600px] sm:text-6xl !leading-snug"
+        >
           حلول تأمينية موثوقة لحماية مستقبلك
-        </h1>
+        </motion.h1>
 
-        <p className="text-2xl mb-6">
+        <motion.p
+          initial={{
+            opacity: 0,
+          }}
+          animate={{
+            opacity: 1,
+          }}
+          transition={{
+            duration: 0.8,
+            delay: 0.9,
+          }}
+          className="text-2xl mb-6"
+        >
           نقدم خدمات وساطة تأمينية احترافية تلبي احتياجاتك و تحمي مصالحك
-        </p>
+        </motion.p>
       </div>
-      <div>
+      <motion.div
+        initial={{
+          opacity: 0,
+        }}
+        animate={{
+          opacity: 1,
+        }}
+        transition={{
+          duration: 0.8,
+          delay: 1.1,
+        }}
+      >
         <Link
           className="inline-block bg-primary text-white px-11 py-3 rounded-md m-3 hover:bg-white hover:text-primary"
           href="/contact-us"
@@ -36,7 +75,7 @@ const Hero = () => {
         >
           استكشف خدماتنا
         </Link>
-      </div>
+      </motion.div>
     </section>
   );
 };
