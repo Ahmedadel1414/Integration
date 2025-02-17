@@ -1,6 +1,9 @@
 type SliderInfo = {
   sliderSrc: string;
   sliderAlt: string;
+  margin?: number;
+  width?: number;
+  height?: number;
 };
 
 export const sliderInfo: SliderInfo[] = [
