@@ -48,19 +48,18 @@ const ImagSlider = () => {
       </div>
 
       <div>
-        <div className="mx-auto px-4">
+        <div className="mx-auto p-4">
           <Slider {...settings}>
             {sliderInfo.map((slider, index) => (
-              <div key={index}>
-                <Image
-                  src={slider.sliderSrc}
-                  width={120}
-                  height={96}
-                  alt={slider.sliderAlt}
-                  loading="eager"
-                  className="mix-blend-multiply bg-transparent filter object-contain h-24 px-1"
-                />
-              </div>
+              <Image
+                key={index}
+                src={slider.sliderSrc}
+                width={100}
+                height={100}
+                alt={slider.sliderAlt}
+                loading="eager"
+                className="w-[100px] bg-transparent px-1"
+              />
             ))}
           </Slider>
         </div>
