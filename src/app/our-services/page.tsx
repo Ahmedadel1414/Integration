@@ -90,9 +90,10 @@ const Page = () => {
                 <Image
                   alt="Insurance Type"
                   src={insurance.insuranceSrc}
-                  width={462}
-                  height={462}
-                  className="w-full"
+                  width={500}
+                  height={500}
+                  className="aspect-[1.3]"
+                  loading="lazy"
                 />
                 <h3 className="mx-auto text-xl font-semibold py-5 text-center px-2">
                   {insurance.insuranceTitle}

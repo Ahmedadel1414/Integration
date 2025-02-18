@@ -15,12 +15,12 @@ export default {
       },
       backgroundColor: {
         primary: "#0e4ba1",
-        secondary: "#3ab5b5",
+        secondary: "#4FC8EA",
         danger: "",
       },
       colors: {
         primary: "#0e4ba1",
-        secondary: "#3ab5b5",
+        secondary: "#4FC8EA",
         danger: "",
       },
       textColor: {},
