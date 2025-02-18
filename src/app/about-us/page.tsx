@@ -1,12 +1,24 @@
 import AboutUs from "@/components/about-us/AboutUs";
 import Link from "next/link";
 import ImagSlider from "@/components/imagSlider/ImagSlider";
+import Image from "next/image";
 
 const Page = () => {
   return (
-    <section className="">
-      <div className="relative -z-50 bg-[url(/assets/who-are-we.jpg)] filter w-full bg-cover bg-center px-0 py-[150px]">
+    <section>
+      <div className="relative -z-50 w-full bg-cover bg-center px-0 py-[150px]">
         <div className="bg-black w-full h-full top-0 left-0 absolute -z-40 opacity-40"></div>
+
+        <div className="absolute inset-0 -z-50">
+          <Image
+            src="/assets/who-are-we.webp"
+            width={1600}
+            height={476}
+            alt="Contact Us Section Image"
+            loading="eager"
+            className="w-full h-full object-cover object-center"
+          />
+        </div>
         <div className="space-y-8">
           <h1 className="m-auto text-center text-4xl font-semibold pt-5 xs:text-5xl text-white">
             من نحن
