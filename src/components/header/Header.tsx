@@ -32,6 +32,8 @@ const Header = () => {
             alt="Integration Logo"
             width={300}
             height={100}
+            loading="lazy"
+            fetchPriority="high"
           />
         </Link>
 

@@ -83,7 +83,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="ar" dir="rtl">
+    <html lang="ar" dir="rtl" className={cairo.variable}>
       <body className={`${cairo.variable} ${tw_cen_mt.variable} antialiased`}>
         <Script
           id="google-tag-manager"

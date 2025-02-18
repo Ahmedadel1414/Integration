@@ -16,6 +16,7 @@ const Hero = () => {
           height={1080}
           className="h-screen brightness-75 object-cover"
           loading="eager"
+          priority
         />
       </div>
       <div>
@@ -34,7 +35,6 @@ const Hero = () => {
         >
           حلول تأمينية موثوقة لحماية مستقبلك
         </motion.h1>
-
         <motion.p
           initial={{
             opacity: 0,

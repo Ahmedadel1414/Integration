@@ -7,7 +7,7 @@ const page = () => {
       <div className="relative -z-50  w-full bg-cover bg-center px-0 py-[150px]">
         <div className="absolute inset-0 -z-50">
           <Image
-            src="/assets/vision-and-goals.jpg"
+            src="/assets/vision-and-goals.webp"
             alt="Services Section Vision and goals"
             width={1600}
             height={476}
@@ -66,28 +66,28 @@ const page = () => {
                   متواصلًا على مدار الساعة.
                 </li>
                 <li>
-                  <span className="font-semibold">تطوير الحلول التأمينية:</span>{" "}
+                  <span className="font-semibold">تطوير الحلول التأمينية:</span>
                   عبر دراسة دقيقة للمخاطر، وتحليل الأصول، وتقديم أفضل التوصيات
                   لضمان تغطية تأمينية مناسبة وعادلة.
                 </li>
                 <li>
                   <span className="font-semibold">
                     تحسين كفاءة إدارة التأمين والتعويضات:
-                  </span>{" "}
+                  </span>
                   من خلال متابعة كاملة مع شركات التأمين، بدءًا من طلب العروض
                   وحتى تسوية المطالبات بشكل فعال.
                 </li>
                 <li>
                   <span className="font-semibold">
                     الابتكار والتطوير المستمر:
-                  </span>{" "}
+                  </span>
                   عبر اعتماد أحدث المعايير والتقنيات لضمان تقديم حلول تأمينية
                   حديثة تلبي متطلبات السوق المتغيرة.
                 </li>
                 <li>
                   <span className="font-semibold">
                     بناء علاقات قوية مع الشركات التأمينية:
-                  </span>{" "}
+                  </span>
                   لضمان توفير أفضل العروض والحلول لعملائنا، مما يعزز من مكانتنا
                   كشركة رائدة في المجال.
                 </li>
