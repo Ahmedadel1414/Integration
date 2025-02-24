@@ -21,16 +21,10 @@ const Footer = () => {
             </div>
             <div className="flex flex-col space-y-3 text-sm mb-4 md:mb-0">
               <Link
-                href="/terms-and-conditions"
-                className="text-gray-600 hover:text-secondary transition-colors"
-              >
-                الشروط والأحكام
-              </Link>
-              <Link
                 href="/privacy-policy"
                 className="text-gray-600 hover:text-secondary transition-colors"
               >
-                سياسة الخصوصية
+                سياستنا
               </Link>
             </div>
           </div>

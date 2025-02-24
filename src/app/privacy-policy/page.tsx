@@ -11,7 +11,7 @@ const PrivacyPolicy = () => {
     <div className="min-h-screen">
       <div className="container mx-auto px-4 py-12">
         <h1 className="text-4xl font-bold text-center mb-16 text-primary">
-          سياسة الخصوصية
+          سياستنا
         </h1>
 
         <div
