@@ -28,10 +28,10 @@ const Nav = () => {
 
   return (
     <nav
-      className="relative text-lg max-[850px]:text-base hidden lg:flex"
+      className="relative text-base xl:text-lg hidden lg:flex"
       aria-label="breadcrumb"
     >
-      <ul className="flex justify-center gap-x-4">
+      <ul className="flex justify-center gap-x-3 xl:gap-x-4">
         {navBarr.slice(0, 6).map((section, index) => (
           <li
             key={index}
