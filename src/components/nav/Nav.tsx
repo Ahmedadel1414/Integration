@@ -1,7 +1,6 @@
 "use client";
 
 import Link from "next/link";
-
 import { navBarr } from "@/constants/navSections";
 import { usePathname } from "next/navigation";
 import { FaAngleDown } from "react-icons/fa";
@@ -44,46 +43,58 @@ const Nav = () => {
         ))}
         <li
           ref={sideNavRef}
-          onClick={() => setSideNavBar((priv) => !priv)}
-          className="relative hover:text-secondary cursor-pointer"
+          onClick={() => setSideNavBar((prev) => !prev)}
+          className="relative hover:text-secondary cursor-pointer flex items-center gap-1"
         >
           المزيد عنا
-          <span>
-            <FaAngleDown className="absolute -left-4 bottom-1" />
-          </span>
+          <FaAngleDown
+            className={`transition-transform duration-300 ${
+              sideNavBarr ? "rotate-180" : "rotate-0"
+            }`}
+          />
         </li>
       </ul>
-      {sideNavBarr && (
-        <div className="absolute top-10 -left-2 w-56 border-2 border-primary bg-white text-blue-900 text-center py-6 shadow-lg rounded-md">
-          <ul className="flex flex-col gap-y-4">
-            <li
-              className={`hover:text-secondary hover:font-bold transition-all duration-200 ${
-                pathname == `/workflow-steps` && "text-secondary font-bold"
-              }`}
-            >
-              <Link href="/workflow-steps">خطوات سير العمل</Link>
-            </li>
-            <li
-              className={`hover:text-secondary hover:font-bold transition-all duration-200 ${
-                pathname == `/foundations-and-principles` &&
-                "text-secondary font-bold"
-              }`}
-            >
-              <Link href="/foundations-and-principles">الأسس و المبادئ</Link>
-            </li>
-            <li
-              className={`hover:text-secondary hover:font-bold transition-all duration-200 ${
-                pathname == `/advantages-of-dealing-with-us` &&
-                "text-secondary font-bold"
-              }`}
-            >
-              <Link href="/advantages-of-dealing-with-us">
-                مميزات التعامل معنا
-              </Link>
-            </li>
-          </ul>
-        </div>
-      )}
+
+      {/* القائمة الجانبية المحسّنة */}
+      <div
+        className={`absolute top-12 -left-4 w-60 border border-gray-300 bg-white text-blue-900 text-center shadow-xl rounded-lg overflow-hidden transition-all duration-500 ease-in-out transform ${
+          sideNavBarr
+            ? "opacity-100 scale-100 py-4"
+            : "opacity-0 scale-95 py-0 pointer-events-none"
+        }`}
+      >
+        <ul className="flex flex-col gap-y-3 px-4">
+          <li
+            className={`hover:bg-blue-100 hover:text-secondary hover:font-bold py-2 rounded-md transition-all duration-200 ${
+              pathname === "/workflow-steps"
+                ? "text-secondary font-bold bg-gray-100"
+                : ""
+            }`}
+          >
+            <Link href="/workflow-steps">خطوات سير العمل</Link>
+          </li>
+          <li
+            className={`hover:bg-blue-100 hover:text-secondary hover:font-bold py-2 rounded-md transition-all duration-200 ${
+              pathname === "/foundations-and-principles"
+                ? "text-secondary font-bold bg-gray-100"
+                : ""
+            }`}
+          >
+            <Link href="/foundations-and-principles">الأسس و المبادئ</Link>
+          </li>
+          <li
+            className={`hover:bg-blue-100 hover:text-secondary hover:font-bold py-2 rounded-md transition-all duration-200 ${
+              pathname === "/advantages-of-dealing-with-us"
+                ? "text-secondary font-bold bg-gray-100"
+                : ""
+            }`}
+          >
+            <Link href="/advantages-of-dealing-with-us">
+              مميزات التعامل معنا
+            </Link>
+          </li>
+        </ul>
+      </div>
     </nav>
   );
 };
