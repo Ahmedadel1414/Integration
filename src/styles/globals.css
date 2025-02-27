@@ -8,7 +8,7 @@
 }
 
 body {
-  background-image: url("./logo.png");
+  background-image: url("/assets/logos/logo.webp");
   background-size: 40%;
   background-repeat: no-repeat;
   background-position: center;

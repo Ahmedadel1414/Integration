@@ -13,7 +13,7 @@ const Page = () => {
       <div className="relative -z-50 w-full bg-cover px-0 py-[150px]">
         <div className="absolute inset-0 -z-50">
           <Image
-            src="/assets/services.jpg"
+            src="/assets/services.webp"
             alt="Services Section Image"
             width={1600}
             height={476}

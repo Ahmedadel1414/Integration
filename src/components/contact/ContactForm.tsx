@@ -9,6 +9,7 @@ const ContactForm = () => {
         type="name"
         name="name"
         required
+        aria-label="Name Input"
       />
       <label htmlFor="email" className="text-xl font-medium mb-2.5">
         البريد الالكتروني
@@ -18,6 +19,7 @@ const ContactForm = () => {
         type="email"
         name="email"
         required
+        aria-label="email Input"
       />
       <label htmlFor="message" className="text-xl font-medium mb-2.5">
         الرساله
@@ -26,6 +28,7 @@ const ContactForm = () => {
         className="px-3 pb-32 pt-3 bg-gray-100 rounded-lg border-[2px] border-primary outline-none focus:border-[3px]"
         name="message"
         required
+        aria-label="Your Message Textarea"
       ></textarea>
 
       <button className="inline-block bg-primary text-white px-11 py-3 rounded-md ml-auto my-10 hover:bg-opacity-80">

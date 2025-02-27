@@ -22,6 +22,7 @@ const Contact = () => {
             referrerPolicy="no-referrer-when-downgrade"
             className="border rounded-xl w-full"
             allowFullScreen
+            aria-label="Integration Location in google maps"
           ></iframe>
         </div>
       </div>

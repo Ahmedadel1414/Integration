@@ -21,16 +21,10 @@ const Footer = () => {
             </div>
             <div className="flex flex-col space-y-3 text-sm mb-4 md:mb-0">
               <Link
-                href="/terms-and-conditions"
-                className="text-gray-600 hover:text-secondary transition-colors"
-              >
-                الشروط والأحكام
-              </Link>
-              <Link
                 href="/privacy-policy"
                 className="text-gray-600 hover:text-secondary transition-colors"
               >
-                سياسة الخصوصية
+                سياستنا
               </Link>
             </div>
           </div>
@@ -45,10 +39,11 @@ const Footer = () => {
                 <p>تليفون: 26198101 (202+) - 26198102 (202+)</p>
                 <p>موبايل: 01080631393 (20+) - 01225820227 (20+)</p>
                 <p>
-                  بريد إلكتروني:{" "}
+                  بريد إلكتروني:
                   <Link
                     href="mailto:director@iibeg.com"
                     className="text-secondary hover:underline underline-offset-2"
+                    aria-label="Our Email Address"
                   >
                     director@iibeg.com
                   </Link>
@@ -75,6 +70,7 @@ const Footer = () => {
               <Link
                 href="#"
                 className="text-gray-600 hover:text-secondary transition-colors p-2"
+                aria-label="Our Social Media Link to Facebook"
               >
                 <svg
                   className="w-6 h-6"
@@ -87,18 +83,21 @@ const Footer = () => {
               <Link
                 href="#"
                 className="text-gray-600 hover:text-secondary transition-colors p-2"
+                aria-label="Our Social Media Link to x.com"
               >
                 <svg
                   className="w-6 h-6"
                   fill="currentColor"
                   viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
                 >
-                  <path d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm6.066 9.645c.183 4.04-2.83 8.544-8.164 8.544-1.622 0-3.131-.476-4.402-1.291 1.524.18 3.045-.244 4.252-1.189-1.256-.023-2.317-.854-2.684-1.995.451.086.895.061 1.298-.049-1.381-.278-2.335-1.522-2.304-2.853.388.215.83.344 1.301.359-1.279-.855-1.641-2.544-.889-3.835 1.416 1.738 3.533 2.881 5.92 3.001-.419-1.796.944-3.527 2.799-3.527.825 0 1.572.349 2.096.907.654-.128 1.27-.368 1.824-.697-.215.671-.67 1.233-1.263 1.589.581-.07 1.135-.224 1.649-.453-.384.578-.87 1.084-1.433 1.489z" />
+                  <path d="M18.427 1.998H21L13.92 10.13l8.74 11.87h-6.65l-5.63-7.65-6.44 7.65H1l8.02-8.88L1.5 1.999H8.3l4.8 6.84 5.32-6.84z" />
                 </svg>
               </Link>
               <Link
                 href="#"
                 className="text-gray-600 hover:text-secondary transition-colors p-2"
+                aria-label="Our Social Media Link to Linked in"
               >
                 <svg
                   className="w-6 h-6"
