@@ -1,16 +1,12 @@
-import AboutSection from "@/components/about-us/AboutSection";
 import Contact from "@/components/contact/Contact";
 import Hero from "@/components/Hero/Hero";
-import InsuranceTypes from "@/components/InsuranceTypes/InsuranceTypes";
-import OurServices from "@/components/OurServices/OurServices";
+import ImagSlider from "@/components/imagSlider/ImagSlider";
 
 const Home = () => {
   return (
     <>
       <Hero />
-      <AboutSection />
-      <OurServices />
-      <InsuranceTypes />
+      <ImagSlider />
       <Contact />
     </>
   );
