@@ -11,12 +11,12 @@ import {
 const stats = [
   {
     icon: FaUsers,
-    number: "10,000+",
-    label: "عميل سعيد",
-  },
+    number: "+100",
+    label: "موظف محترف",
+  },  
   {
     icon: FaCheckCircle,
-    number: "15+",
+    number: "5+",
     label: "سنوات خبرة",
   },
   {
