@@ -11,7 +11,7 @@ import {
 const stats = [
   {
     icon: FaUsers,
-    number: "+100",
+    number: "+50",
     label: "موظف محترف",
   },  
   {

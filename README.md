@@ -1,36 +1,157 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Integration Insurance Platform
 
-## Get Started
+A modern, responsive insurance platform built with Next.js, featuring a bilingual interface (Arabic/English) and comprehensive insurance services information.
 
-First, run the development server:
+## Features
 
+- Fully Responsive Design
+- Bilingual Support (Arabic/English)
+- Modern UI/UX
+- Fast Performance
+- SEO Optimized
+- Modular Component Architecture
+
+## Project Structure
+
+```
+integration/
+├── public/
+│   ├── assets/
+│   │   ├── insurance-imgs/   # Insurance-related images
+│   │   ├── logos/           # Company and partner logos
+│   │   ├── new/            # New assets
+│   │   └── trust/          # Trust badges and certificates
+├── src/
+│   ├── app/                # Next.js 13+ App Router
+│   │   ├── (home)/        # Home page
+│   │   ├── about-us/      # About Us page
+│   │   ├── contact-us/    # Contact page
+│   │   └── our-services/  # Services page
+│   ├── components/        # Reusable components
+│   │   ├── Hero/         # Hero section
+│   │   ├── InsuranceTypes/ # Insurance type components
+│   │   ├── about/        # About section components
+│   │   ├── faq/          # FAQ components
+│   │   ├── footer/       # Footer component
+│   │   ├── header/       # Header component
+│   │   └── services/     # Service-related components
+│   ├── constants/        # Constants and configurations
+│   └── styles/          # Global styles and CSS modules
+```
+
+## Key Components
+
+### 1. Layout Components
+- `header/`: Main navigation and site header
+- `footer/`: Site footer with links and contact info
+- `nav/`: Navigation menu component
+
+### 2. Home Page Components
+- `Hero/`: Hero section with main CTA
+- `Services/`: Insurance services showcase
+- `Statistics/`: Company statistics and achievements
+- `FAQ/`: Frequently asked questions (Arabic/English)
+- `Partners/`: Partner companies showcase
+- `ImageSlider/`: Image carousel component
+
+### 3. Feature Components
+- `InsuranceTypes/`: Different insurance product types
+- `contact/`: Contact form and information
+- `about/`: Company information and history
+
+## Getting Started
+
+1. **Clone the repository**
+```bash
+git clone https://github.com/yourusername/integration.git
+cd integration
+```
+
+2. **Install dependencies**
+```bash
+npm install
+# or
+yarn install
+```
+
+3. **Run the development server**
 ```bash
 npm run dev
 # or
 yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+4. Open [http://localhost:3000](http://localhost:3000) to view the application
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Technology Stack
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- **Framework**: Next.js 13+
+- **Styling**: CSS Modules
+- **Icons**: React Icons
+- **Fonts**: Cairo (Arabic), Inter (English)
+- **Deployment**: Vercel
 
-## Learn More
+## Responsive Design
 
-To learn more about Next.js, take a look at the following resources:
+The platform is fully responsive and optimized for:
+- Desktop (1200px+)
+- Tablet (768px - 1199px)
+- Mobile (320px - 767px)
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Internationalization
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+The platform supports both Arabic and English languages with:
+- RTL/LTR layout switching
+- Localized content
+- Language-specific fonts
+- Culturally appropriate UI elements
 
-## Deploy on Vercel
+## Configuration
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Key configuration files are located in `src/constants/`:
+- Navigation menus
+- Service types
+- Contact information
+- Social media links
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Component Usage
+
+### Hero Component
+```jsx
+import Hero from "@/components/Hero/Hero";
+
+// Usage
+<Hero />
+```
+
+### FAQ Component
+```jsx
+import FAQ from "@/components/faq/FAQ";
+
+// Usage
+<FAQ />
+```
+
+### Services Component
+```jsx
+import Services from "@/components/services/Services";
+
+// Usage
+<Services />
+```
+
+## Contributing
+
+1. Fork the repository
+2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
+
+## License
+
+This project is licensed under the MIT License - see the LICENSE file for details
+
+## Support
+
+For support, email support@integration.com or open an issue in the repository.
