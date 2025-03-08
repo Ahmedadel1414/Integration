@@ -6,8 +6,12 @@ import InsuranceCardsContainer from "@/components/cards/InsuranceCardsContainer"
 
 import { insuranceCategories } from "@/constants/insurance";
 import { motion } from "motion/react";
+import { useTranslation } from "react-i18next";
+
 
 const InsuranceTypes = () => {
+  const { i18n } = useTranslation();
+  const currentLang = i18n.language as "en" | "ar";
   return (
     <>
       <section className="pt-10">
@@ -37,10 +41,10 @@ const InsuranceTypes = () => {
           >
             {insuranceCategories.slice(0, 6).map((ins) => (
               <InsuranceCardsContainer
-                key={ins.insuranceTitle}
+                key={ins.insuranceTitle.en}
                 insuranceSrc={ins.insuranceSrc}
-                insuranceTitle={ins.insuranceTitle}
-                insuranceDescription={ins.insuranceDescription}
+                insuranceTitle={ins.insuranceTitle[currentLang]}
+                insuranceDescription={ins.insuranceDescription[currentLang]}
               />
             ))}
           </motion.div>
