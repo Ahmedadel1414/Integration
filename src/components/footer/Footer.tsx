@@ -4,11 +4,14 @@ import Link from "next/link";
 import Image from "next/image";
 import { useTranslation } from "react-i18next";
 
+import i18next from "i18next";
+
 const Footer = () => {
+
   const { t } = useTranslation();
 
   return (
-    <footer className="bg-white border-t border-gray-200" dir="rtl">
+    <footer className="bg-white border-t border-gray-200" dir={i18next.dir()}>
       <div className="max-w-screen-2xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 text-right">
           {/* Logo and Legal Links Section */}
@@ -24,16 +27,7 @@ const Footer = () => {
                 />
               </Link>
             </div>
-            {/* <div className="flex flex-col space-y-3 text-sm mb-4 md:mb-0">
-              <Link
-                href="/privacy-policy"
-                className="text-gray-600 hover:text-secondary transition-colors"
-              >
-                {t("footer.privacyPolicy")}
-              </Link>
-            </div> */}
           </div>
-
           {/* Contact Info Section */}
           <div className="lg:col-span-2 grid grid-cols-1 md:grid-cols-2 gap-8 text-center">
             <div>

@@ -5,6 +5,7 @@ import { usePathname } from "next/navigation";
 import { FaAngleDown } from "react-icons/fa";
 import { useEffect, useRef, useState } from "react";
 import { useTranslation } from "react-i18next";
+import i18next from "i18next";
 
 const Nav = () => {
   const [sideNavBarr, setSideNavBar] = useState(false);
@@ -30,6 +31,7 @@ const Nav = () => {
     <nav
       className="relative text-base xl:text-lg hidden lg:flex"
       aria-label="breadcrumb"
+      dir={i18next.dir()}
     >
       <ul className="flex justify-center gap-x-2 xl:gap-x-4">
         <li className={`hover:text-secondary ${pathname === "/" ? "text-secondary font-bold" : ""}`}>
@@ -61,48 +63,48 @@ const Nav = () => {
               sideNavBarr ? "rotate-180" : "rotate-0"
             }`}
           />
+          <div
+            className={`absolute top-12 w-60 border border-gray-300 bg-white text-blue-900 text-center shadow-xl rounded-lg overflow-hidden transition-all duration-500 ease-in-out transform ${
+              sideNavBarr
+                ? "opacity-100 scale-100 py-4"
+                : "opacity-0 scale-95 py-0 pointer-events-none"
+            } ${i18next.dir() === "rtl" ? "-left-4":"-left-20"}`}
+          >
+            <ul className="flex flex-col gap-y-3 px-4">
+              <li
+                className={`hover:bg-blue-100 hover:text-secondary hover:font-bold py-2 rounded-md transition-all duration-200 ${
+                  pathname === "/workflow-steps"
+                    ? "text-secondary font-bold bg-gray-100"
+                    : ""
+                }`}
+              >
+                <Link href="/workflow-steps">{t("nav.workflowSteps")}</Link>
+              </li>
+              <li
+                className={`hover:bg-blue-100 hover:text-secondary hover:font-bold py-2 rounded-md transition-all duration-200 ${
+                  pathname === "/foundations-and-principles"
+                    ? "text-secondary font-bold bg-gray-100"
+                    : ""
+                }`}
+              >
+                <Link href="/foundations-and-principles">{t("nav.foundationsAndPrinciples")}</Link>
+              </li>
+              <li
+                className={`hover:bg-blue-100 hover:text-secondary hover:font-bold py-2 rounded-md transition-all duration-200 ${
+                  pathname === "/advantages-of-dealing-with-us"
+                    ? "text-secondary font-bold bg-gray-100"
+                    : ""
+                }`}
+              >
+                <Link href="/advantages-of-dealing-with-us">
+                  {t("nav.advantagesOfDealingWithUs")}
+                </Link>
+              </li>
+            </ul>
+          </div>
         </li>
       </ul>
 
-      <div
-        className={`absolute top-12 -left-4 w-60 border border-gray-300 bg-white text-blue-900 text-center shadow-xl rounded-lg overflow-hidden transition-all duration-500 ease-in-out transform ${
-          sideNavBarr
-            ? "opacity-100 scale-100 py-4"
-            : "opacity-0 scale-95 py-0 pointer-events-none"
-        }`}
-      >
-        <ul className="flex flex-col gap-y-3 px-4">
-          <li
-            className={`hover:bg-blue-100 hover:text-secondary hover:font-bold py-2 rounded-md transition-all duration-200 ${
-              pathname === "/workflow-steps"
-                ? "text-secondary font-bold bg-gray-100"
-                : ""
-            }`}
-          >
-            <Link href="/workflow-steps">{t("nav.workflowSteps")}</Link>
-          </li>
-          <li
-            className={`hover:bg-blue-100 hover:text-secondary hover:font-bold py-2 rounded-md transition-all duration-200 ${
-              pathname === "/foundations-and-principles"
-                ? "text-secondary font-bold bg-gray-100"
-                : ""
-            }`}
-          >
-            <Link href="/foundations-and-principles">{t("nav.foundationsAndPrinciples")}</Link>
-          </li>
-          <li
-            className={`hover:bg-blue-100 hover:text-secondary hover:font-bold py-2 rounded-md transition-all duration-200 ${
-              pathname === "/advantages-of-dealing-with-us"
-                ? "text-secondary font-bold bg-gray-100"
-                : ""
-            }`}
-          >
-            <Link href="/advantages-of-dealing-with-us">
-              {t("nav.advantagesOfDealingWithUs")}
-            </Link>
-          </li>
-        </ul>
-      </div>
     </nav>
   );
 };

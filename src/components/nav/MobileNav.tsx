@@ -1,7 +1,6 @@
 "use client";
 
 import Link from "next/link";
-import { navBarr } from "@/constants/navSections";
 import { usePathname } from "next/navigation";
 import { FaBars, FaTimes } from "react-icons/fa";
 import { useState } from "react";
@@ -41,19 +40,81 @@ const MobileNav = () => {
           </button>
         </div>
 
-        <ul className="p-4 space-y-4">
-          {navBarr.map((section, index) => (
-            <li
-              key={index}
-              className={`hover:text-secondary ${
-                pathname === `/${section.url}` ? "text-secondary font-bold" : ""
-              }`}
-            >
-              <Link href={`/${section.url}`} onClick={toggleMenu}>
-                {t(`nav.${section.url}`)}
-              </Link>
-            </li>
-          ))}
+        <ul className="p-4 space-y-4 content-center text-center h-3/4 text-2xl">
+          
+        <li className={`hover:bg-blue-100 hover:text-secondary hover:font-bold py-2 rounded-md transition-all duration-200 ${
+                  pathname === "/workflow-steps"
+                    ? "text-secondary font-bold bg-gray-100"
+                    : ""
+                }`}>
+          <Link href="/">{t("nav.home")}</Link>
+        </li>
+        <li className={`hover:bg-blue-100 hover:text-secondary hover:font-bold py-2 rounded-md transition-all duration-200 ${
+                  pathname === "/workflow-steps"
+                    ? "text-secondary font-bold bg-gray-100"
+                    : ""
+                }`}>
+          <Link href="/about-us">{t("nav.aboutUs")}</Link>
+        </li>
+        <li className={`hover:bg-blue-100 hover:text-secondary hover:font-bold py-2 rounded-md transition-all duration-200 ${
+                  pathname === "/workflow-steps"
+                    ? "text-secondary font-bold bg-gray-100"
+                    : ""
+                }`}>
+          <Link href="/our-services">{t("nav.services")}</Link>
+        </li>
+        <li className={`hover:bg-blue-100 hover:text-secondary hover:font-bold py-2 rounded-md transition-all duration-200 ${
+                  pathname === "/workflow-steps"
+                    ? "text-secondary font-bold bg-gray-100"
+                    : ""
+                }`}>
+          <Link href="/vision-and-goals">{t("nav.visionAndGoals")}</Link>
+        </li>
+        <li className={`hover:bg-blue-100 hover:text-secondary hover:font-bold py-2 rounded-md transition-all duration-200 ${
+                  pathname === "/workflow-steps"
+                    ? "text-secondary font-bold bg-gray-100"
+                    : ""
+                }`}>
+          <Link href="/privacy-policy">{t("nav.privacyPolicy")}</Link>
+        </li>
+        <li className={`hover:bg-blue-100 hover:text-secondary hover:font-bold py-2 rounded-md transition-all duration-200 ${
+                  pathname === "/workflow-steps"
+                    ? "text-secondary font-bold bg-gray-100"
+                    : ""
+                }`}>
+          <Link href="/contact-us">{t("nav.contactUs")}</Link>
+        </li>
+
+        <li
+                className={`hover:bg-blue-100 hover:text-secondary hover:font-bold py-2 rounded-md transition-all duration-200 ${
+                  pathname === "/workflow-steps"
+                    ? "text-secondary font-bold bg-gray-100"
+                    : ""
+                }`}
+              >
+                <Link href="/workflow-steps">{t("nav.workflowSteps")}</Link>
+              </li>
+              <li
+                className={`hover:bg-blue-100 hover:text-secondary hover:font-bold py-2 rounded-md transition-all duration-200 ${
+                  pathname === "/foundations-and-principles"
+                    ? "text-secondary font-bold bg-gray-100"
+                    : ""
+                }`}
+              >
+                <Link href="/foundations-and-principles">{t("nav.foundationsAndPrinciples")}</Link>
+              </li>
+              <li
+                className={`hover:bg-blue-100 hover:text-secondary hover:font-bold py-2 rounded-md transition-all duration-200 ${
+                  pathname === "/advantages-of-dealing-with-us"
+                    ? "text-secondary font-bold bg-gray-100"
+                    : ""
+                }`}
+              >
+                <Link href="/advantages-of-dealing-with-us">
+                  {t("nav.advantagesOfDealingWithUs")}
+                </Link>
+              </li>
+
         </ul>
       </nav>
     </div>
