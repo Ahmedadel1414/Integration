@@ -1,7 +1,12 @@
+"use client";
+
 import Contact from "@/components/contact/Contact";
 import Image from "next/image";
+import { useTranslation } from "react-i18next";
 
 const Page = () => {
+  const { t } = useTranslation();
+
   return (
     <section>
       <div className="relative -z-50  w-full bg-cover bg-center px-0 py-[150px]">
@@ -20,16 +25,14 @@ const Page = () => {
 
         <div className="space-y-8">
           <h1 className="m-auto text-center text-3xl font-semibold pt-5 xs:text-4xl sm:text-5xl text-white">
-            التواصل والدعم
+            {t("contact.title")}
           </h1>
           <div className="space-y-3">
             <p className="m-auto text-center text-base font-medium sm:text-xl md:text-2xl text-white">
-              يتم تعيين مسئول للتعامل مع طلبات العميل اليوميه من
-              (تعديل-اضافة-الغاء) او اي طلبات اخري.
+              {t("contact.description1")}
             </p>
             <p className="m-auto text-center text-base font-medium sm:text-xl md:text-2xl text-white">
-              نقوم بمتابعة التجديدات و توفير عروض جديدة عند التجديد لايجاد بدائل
-              دائمه للعملاء.
+              {t("contact.description2")}
             </p>
           </div>
         </div>

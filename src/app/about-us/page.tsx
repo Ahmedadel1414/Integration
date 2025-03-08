@@ -1,9 +1,14 @@
+"use client";
+
 import AboutUs from "@/components/about-us/AboutUs";
 import Link from "next/link";
 import ImagSlider from "@/components/imagSlider/ImagSlider";
 import Image from "next/image";
+import { useTranslation } from "react-i18next";
 
 const Page = () => {
+  const { t } = useTranslation();
+
   return (
     <section>
       <div className="relative -z-50 w-full bg-cover bg-center px-0 py-[150px]">
@@ -21,22 +26,17 @@ const Page = () => {
         </div>
         <div className="space-y-8">
           <h1 className="m-auto text-center text-4xl font-semibold pt-5 xs:text-5xl text-white">
-            من نحن
+            {t("aboutUs.title")}
           </h1>
           <div className="space-y-3">
-            <p className="m-auto text-center text-base font-medium sm:text-xl md:text-2xl text-white">
-              نحن شركة متخصصة في تقديم حلول تأمينية متكاملة، مصممة خصيصًا لتلبية
-              احتياجات عملائنا وفق أعلى معايير الجودة والموثوقية.
-            </p>
-            <p className="m-auto text-center text-base font-medium sm:text-xl md:text-2xl text-white">
-              نمتلك خبرة واسعة في مجال التأمين، ونعمل من خلال فريق محترف لضمان
-              تقديم خدمات مبتكرة تساعد عملاءنا على تحقيق الأمان المالي
-              والاستقرار.
-            </p>
-            <p className="m-auto text-center text-base font-medium sm:text-xl md:text-2xl text-white">
-              نحرص على التطوير المستمر واعتماد أحدث المعايير والتقنيات في تقديم
-              خدماتنا، بهدف تحقيق رضا العملاء وتعزيز مكانتنا في السوق المصري.
-            </p>
+            {(t("aboutUs.description", { returnObjects: true }) as []).map((text, index) => (
+              <p
+                key={index}
+                className="m-auto text-center text-base font-medium sm:text-xl md:text-2xl text-white"
+              >
+                {text}
+              </p>
+            ))}
           </div>
         </div>
       </div>
@@ -54,7 +54,7 @@ const Page = () => {
           className="inline-block bg-primary text-white px-11 py-3 rounded-md m-auto hover:bg-opacity-80"
           href="/contact-us"
         >
-          اتصل بنا
+          {t("aboutUs.contactUs")}
         </Link>
       </div>
     </section>

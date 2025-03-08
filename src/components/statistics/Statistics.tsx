@@ -1,6 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
+import { useTranslation } from 'react-i18next';
 import {
   FaUsers,
   FaCheckCircle,
@@ -8,30 +9,32 @@ import {
   FaShieldAlt,
 } from "react-icons/fa";
 
-const stats = [
-  {
-    icon: FaUsers,
-    number: "%97",
-    label: "نسبة الاحتفاظ بالعملاء",
-  },  
-  {
-    icon: FaCheckCircle,
-    number: "5+",
-    label: "سنوات خبرة",
-  },
-  {
-    icon: FaBuilding,
-    number: "50+",
-    label: "شركة شريكة",
-  },
-  {
-    icon: FaShieldAlt,
-    number: "95%",
-    label: "نسبة رضا العملاء",
-  },
-];
-
 const Statistics = () => {
+  const { t } = useTranslation();
+
+  const stats = [
+    {
+      icon: FaUsers,
+      number: "%97",
+      label: t('statistics.customerRetention'),
+    },  
+    {
+      icon: FaCheckCircle,
+      number: "5+",
+      label: t('statistics.yearsExperience'),
+    },
+    {
+      icon: FaBuilding,
+      number: "50+",
+      label: t('statistics.partnerCompanies'),
+    },
+    {
+      icon: FaShieldAlt,
+      number: "95%",
+      label: t('statistics.customerSatisfaction'),
+    },
+  ];
+
   return (
     <section className="py-20 bg-primary text-white">
       <div className="container">
@@ -43,7 +46,7 @@ const Statistics = () => {
             viewport={{ once: true }}
             className="text-4xl md:text-5xl font-bold mb-4"
           >
-            إحصائياتنا
+            {t('statistics.title')}
           </motion.h2>
           <div className="w-24 h-1 bg-secondary mx-auto rounded-full"></div>
         </div>

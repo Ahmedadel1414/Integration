@@ -1,0 +1,261 @@
+{
+  "statistics": {
+    "title": "Our Statistics",
+    "customerRetention": "Customer Retention Rate",
+    "yearsExperience": "Years of Experience",
+    "partnerCompanies": "Partner Companies",
+    "customerSatisfaction": "Customer Satisfaction"
+  },
+  "hero": {
+    "title": "Reliable Insurance Solutions to Protect Your Future",
+    "subtitle": "We provide professional insurance brokerage services that meet your needs and protect your interests",
+    "contactUs": "Contact Us",
+    "exploreServices": "Explore Our Services"
+  },
+  "faq": {
+    "title": "Frequently Asked Questions",
+    "subtitle": "Find answers to common questions about our insurance services",
+    "questions": [
+      {
+        "question": "What types of insurance do you offer?",
+        "answer": "We offer a comprehensive range of insurance products including auto, home, health, life, travel, and business insurance. Each policy can be customized to meet your specific needs."
+      },
+      {
+        "question": "How can I file a claim?",
+        "answer": "Filing a claim is simple. You can either call our 24/7 claims hotline or visit us. Our specialized claims team will guide you through the process."
+      },
+      {
+        "question": "How long does it take to process a claim?",
+        "answer": "Processing time varies depending on the type and complexity of the claim. Simple claims can be processed within 24-48 hours, while more complex cases may take 5-7 business days."
+      },
+      {
+        "question": "What factors affect my insurance premium?",
+        "answer": "Several factors can affect your insurance premium, including type of coverage, claims history, risk factors, policy duration, and deductible amount. Our agents can help explain how these factors impact your premium."
+      },
+      {
+        "question": "Can I modify my insurance policy after purchase?",
+        "answer": "Yes, you can modify your insurance policy at any time. Contact our customer service team to discuss coverage changes, add new items, or adjust policy limits."
+      }
+    ]
+  },
+  "contact": {
+    "title": "Contact Us",
+    "description1": "A representative is assigned to handle daily client requests (modification, addition, cancellation) or any other requests",
+    "description2": "We follow up on renewals and provide new offers during renewal to find permanent alternatives for clients",
+    "form": {
+      "name": "Name",
+      "email": "Email",
+      "message": "Message",
+      "send": "Send Message"
+    }
+  },
+  "partners": {
+    "title": "Success Partners"
+  },
+  "nav": {
+    "home": "Home",
+    "aboutUs": "About Us",
+    "services": "Our Services",
+    "visionAndGoals": "Vision & Goals",
+    "privacyPolicy": "Privacy Policy",
+    "contactUs": "Contact Us",
+    "moreAboutUs": "More About Us",
+    "workflowSteps": "Workflow Steps",
+    "foundationsAndPrinciples": "Foundations & Principles",
+    "advantagesOfDealingWithUs": "Why Choose Us"
+  },
+  "footer": {
+    "contactUs": "Contact Us",
+    "phone": "Phone",
+    "mobile": "Mobile",
+    "email": "Email",
+    "address": {
+      "title": "Address",
+      "value": "Fifth Settlement - Administrative Building - Sky Mall - New Cairo"
+    },
+    "followUs": "Follow Us",
+    "privacyPolicy": "Privacy Policy",
+    "allRightsReserved": "All Rights Reserved"
+  },
+  "aboutUs": {
+    "title": "About Us",
+    "description": [
+      "We provide comprehensive insurance solutions designed to meet our clients' needs with the highest quality standards.",
+      "With extensive experience and a professional team, we deliver innovative services for your financial security.",
+      "We continuously evolve our services using the latest technologies to enhance customer satisfaction and our market position."
+    ],
+    "contactUs": "Contact Us"
+  },
+  "services": {
+    "title": "Our Services",
+    "description": [
+      "Comprehensive insurance solutions tailored to client needs with highest quality standards",
+      "Innovative services for financial security through expert specialized teams",
+      "Continuous development of insurance solutions meeting Egyptian market aspirations"
+    ],
+    "insuranceCoverage": "Insurance Coverage Provided by the Company",
+    "contactUs": "Contact Us"
+  },
+  "ourServices": {
+    "title": "Our Services",
+    "viewMore": "View More Services"
+  },
+  "visionAndGoals": {
+    "title": "Vision and Goals",
+    "heroImage": "Vision and Goals Section",
+    "heroDescription1": "Our vision is successful partnerships with our clients based on our solid added value, working to build strong and clear relationships with our clients, and reaching a distinguished name in the Egyptian market.",
+    "heroDescription2": "Our goals are our commitment to providing the best levels of insurance services in the Egyptian market.",
+    "visionTitle": "Our Vision",
+    "visionDescription": "We aspire to be the leading insurance partner in the Egyptian market by providing innovative and comprehensive insurance solutions, built on our added value, enabling our clients to achieve financial security and stability. We seek to reach a large market share by providing distinguished services that align with market developments and client needs.",
+    "goalsTitle": "Our Goals",
+    "goals": {
+      "0": {
+        "title": "Providing Integrated Insurance Services",
+        "description": "Meeting our clients' needs according to the highest standards of quality and reliability."
+      },
+      "1": {
+        "title": "Enhancing Customer Experience",
+        "description": "Through a professional and specialized team providing distinguished insurance consultations and continuous support around the clock."
+      },
+      "2": {
+        "title": "Developing Insurance Solutions",
+        "description": "Through careful risk assessment, asset analysis, and providing the best recommendations to ensure appropriate and fair insurance coverage."
+      },
+      "3": {
+        "title": "Improving Insurance and Claims Management Efficiency",
+        "description": "Through complete follow-up with insurance companies, from requesting quotes to effectively settling claims."
+      },
+      "4": {
+        "title": "Innovation and Continuous Development",
+        "description": "By adopting the latest standards and technologies to ensure providing modern insurance solutions that meet changing market requirements."
+      },
+      "5": {
+        "title": "Building Strong Relationships with Insurance Companies",
+        "description": "To ensure providing the best offers and solutions to our clients, enhancing our position as a leading company in the field."
+      }
+    },
+    "contact": {
+      "title": "Contact Us:",
+      "phone": "Phone: (+20) 01080631393 - (+20) 01225820227"
+    }
+  },
+  "workflowSteps": {
+    "title": "Workflow Steps and Procedures",
+    "assignment": {
+      "title": "Assignment (Authorization) and Information Collection",
+      "items": [
+        "We are appointed (authorized) by the client as their insurance broker representative before insurance companies.",
+        "Collecting information about the insurance subject and studying it to provide recommendations for appropriate insurance coverage."
+      ]
+    },
+    "communication": {
+      "title": "Contacting Insurance Companies and Issuing Quotations",
+      "items": [
+        "We contact insurance companies to provide insurance quotes, study the submitted offers, and provide a comparative study with recommendations for the best offers in terms of conditions and cost."
+      ]
+    },
+    "brokerRole": {
+      "title": "Insurance Broker's Role in Providing Insurance Solutions",
+      "items": [
+        "The insurance broker serves as the link between clients and insurance companies, being appointed (authorized) by the client to represent them and negotiate on their behalf to obtain the best possible insurance coverage."
+      ]
+    },
+    "analysis": {
+      "title": "Information Collection and Analysis",
+      "items": [
+        "The insurance broker begins by collecting necessary information about the insurance subject and carefully studying it to determine the client's actual needs. This analysis helps in providing accurate recommendations for appropriate insurance coverage that meets client requirements and protects against potential risks."
+      ]
+    },
+    "negotiation": {
+      "title": "Negotiating with Insurance Companies",
+      "items": [
+        "The broker communicates with various insurance companies to request quotes, then analyzes the submitted offers. A comparative study is conducted including coverage terms, exclusions, and costs to ensure providing the best available option for the client."
+      ]
+    },
+    "recommendations": {
+      "title": "Providing Final Recommendations",
+      "items": [
+        "Based on the comparative study, the broker provides the client with a detailed report including recommendations for the best available offers in terms of conditions and cost, helping the client make the appropriate decision according to their needs and financial requirements."
+      ]
+    }
+  },
+  "foundations": {
+    "title": "Foundations and Principles",
+    "innovation": {
+      "title": "Innovation",
+      "items": [
+        "We execute with excellence.",
+        "We excel in customer service and innovative ideas that help clients manage risks, protect assets, and recover from losses."
+      ]
+    },
+    "professionalism": {
+      "title": "Professionalism",
+      "items": [
+        "Professional insurance expertise you can trust.",
+        "We are specialists and you can trust us to act with integrity and protect our clients' interests.",
+        "We know the insurance market well through long experience working in it, and we are committed to providing the best available insurance solutions in the appropriate form for our clients."
+      ]
+    },
+    "partnership": {
+      "title": "Partnership",
+      "items": [
+        "We are your personal insurance consultants, focusing on your needs and priorities.",
+        "We are a quick-response team and take a proactive approach in our partnership with you."
+      ]
+    }
+  },
+  "privacyPolicy": {
+    "title": "Our Policy",
+    "collection": {
+      "title": "Information Collection",
+      "description": "We collect information you provide to us when using our services, including:",
+      "items": [
+        "Personal information (name, address, phone number, email)",
+        "Information about the company or organization you represent",
+        "Insurance and claims related information",
+        "Financial information necessary to complete transactions"
+      ]
+    },
+    "usage": {
+      "title": "Information Usage",
+      "description": "We use the information we collect for the following purposes:",
+      "items": [
+        "Providing insurance brokerage services and policy management",
+        "Communicating with you about services, offers, and updates",
+        "Improving our services and developing new products",
+        "Complying with legal and regulatory requirements"
+      ]
+    },
+    "protection": {
+      "title": "Information Protection",
+      "description": "We are committed to protecting your personal information through:",
+      "items": [
+        "Using advanced encryption technologies to protect data",
+        "Restricting access to information to authorized employees only",
+        "Implementing strict security policies and procedures",
+        "Continuous review and update of security measures"
+      ]
+    },
+    "contact": {
+      "title": "Contact Us:",
+      "phone": "Phone: (+20) 01080631393 - (+20) 01225820227"
+    }
+  },
+  "advantages": {
+    "title": "Advantages of Working with Us",
+    "section": {
+      "title": "Our Advantages",
+      "items": [
+        "We are experts in the Egyptian insurance market and thoroughly understand available insurance products, employing this expertise and knowledge to serve our clients' insurance interests.",
+        "We provide insurance solutions tailored to each client's situation, business nature, and specific needs.",
+        "We offer insurance coverage with the best terms, benefits, and prices available in the Egyptian market, coupled with excellent customer service.",
+        "We possess the best expertise in the Egyptian insurance market, while also monitoring global insurance markets to provide the most suitable insurance solutions for our clients' activities.",
+        "We provide free insurance consultations to help clients understand available insurance options and make informed decisions that meet their actual needs.",
+        "We efficiently manage insurance claims to ensure clients receive their compensation quickly and easily, providing necessary support throughout the claim process.",
+        "We offer customized insurance solutions that suit both individual and corporate needs, whether in health insurance, property insurance, or civil liability insurance.",
+        "We collaborate with major insurance companies to ensure comprehensive and diverse coverage that meets various client requirements at competitive prices.",
+        "We keep pace with the latest developments in both Egyptian and global insurance markets to provide our clients with the most up-to-date and effective insurance solutions."
+      ]
+    }
+  }
+}

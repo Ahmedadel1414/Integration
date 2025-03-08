@@ -1,11 +1,14 @@
 "use client";
 
 import Card from "@/components/services-card/Card";
-
 import { ourServices } from "@/constants/ourServices";
 import { motion } from "motion/react";
+import { useTranslation } from "react-i18next";
 
 const Cards = () => {
+  const { i18n } = useTranslation();
+  const currentLang = i18n.language as "en" | "ar";
+
   return (
     <motion.div
       initial="hidden"
@@ -24,7 +27,7 @@ const Cards = () => {
     >
       {ourServices.map((service) => (
         <motion.div
-          key={service.cardTitle}
+          key={service.key}
           variants={{
             hidden: {
               opacity: 0,
@@ -42,9 +45,9 @@ const Cards = () => {
         >
           <Card
             CardIcon={service.cardIcon}
-            cardTitle={service.cardTitle}
-            cardParagraph={service.cardParagraph}
-            cardParagraph2={service.cardParagraph2}
+            cardTitle={service.cardTitle[currentLang]}
+            cardParagraph={service.cardParagraph[currentLang]}
+            cardParagraph2={service.cardParagraph2?.[currentLang]}
           />
         </motion.div>
       ))}

@@ -1,9 +1,14 @@
+"use client";
+
 import Link from "next/link";
 import Image from "next/image";
+import { useTranslation } from "react-i18next";
 
 const Footer = () => {
+  const { t } = useTranslation();
+
   return (
-    <footer className="bg-white border-t border-gray-200">
+    <footer className="bg-white border-t border-gray-200" dir="rtl">
       <div className="max-w-screen-2xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 text-right">
           {/* Logo and Legal Links Section */}
@@ -19,27 +24,29 @@ const Footer = () => {
                 />
               </Link>
             </div>
-            <div className="flex flex-col space-y-3 text-sm mb-4 md:mb-0">
+            {/* <div className="flex flex-col space-y-3 text-sm mb-4 md:mb-0">
               <Link
                 href="/privacy-policy"
                 className="text-gray-600 hover:text-secondary transition-colors"
               >
-                سياستنا
+                {t("footer.privacyPolicy")}
               </Link>
-            </div>
+            </div> */}
           </div>
 
           {/* Contact Info Section */}
           <div className="lg:col-span-2 grid grid-cols-1 md:grid-cols-2 gap-8 text-center">
             <div>
               <h3 className="text-lg font-semibold text-secondary mb-4">
-                تواصل معنا
+                {t("footer.contactUs")}
               </h3>
               <div className="space-y-3 text-sm text-gray-600">
-                <p>تليفون: 26198101 (202+) - 26198102 (202+)</p>
-                <p>موبايل: 01080631393 (20+) - 01225820227 (20+)</p>
+                <p>{t("footer.phone")}: 26198101 (202+) - 26198102 (202+)</p>
                 <p>
-                  بريد إلكتروني:
+                  {t("footer.mobile")}: 01080631393 (20+) - 01225820227 (20+)
+                </p>
+                <p>
+                  {t("footer.email")}:{" "}
                   <Link
                     href="mailto:director@iibeg.com"
                     className="text-secondary hover:underline underline-offset-2"
@@ -53,10 +60,10 @@ const Footer = () => {
 
             <div>
               <h3 className="text-lg font-semibold text-secondary mb-4">
-                العنوان
+                {t("footer.address.title")}
               </h3>
               <p className="text-sm text-gray-600">
-                التجمع الخامس - المبنى الادارى - سكاي مول - القاهرة الجديدة
+                {t("footer.address.value")}
               </p>
             </div>
           </div>
@@ -64,7 +71,7 @@ const Footer = () => {
           {/* Social Links Section */}
           <div className="lg:col-span-1 text-center">
             <h3 className="text-lg font-semibold text-secondary mb-4">
-              تابعنا
+              {t("footer.followUs")}
             </h3>
             <div className="flex flex-row justify-center space-x-4 space-x-reverse">
               <Link
@@ -114,7 +121,8 @@ const Footer = () => {
         {/* Copyright Section */}
         <div className="mt-8 pt-8 border-t border-gray-200">
           <p className="text-center text-sm text-gray-600">
-            جميع الحقوق محفوظة &copy; {new Date().getFullYear()} Integration
+            {t("footer.allRightsReserved")} &copy; {new Date().getFullYear()}{" "}
+            Integration
           </p>
         </div>
       </div>

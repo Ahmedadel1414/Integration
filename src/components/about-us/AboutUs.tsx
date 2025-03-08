@@ -4,12 +4,15 @@ import Image from "next/image";
 
 import { introduction1, introduction2 } from "@/constants/aboutUs";
 import { motion } from "motion/react";
+import { useTranslation } from "react-i18next";
 
 type AboutUsProps = {
   displayHeading?: boolean;
 };
 
 const AboutUs = ({ displayHeading = true }: AboutUsProps) => {
+  const { i18n } = useTranslation();
+
   return (
     <div className="max-w-7xl mx-auto px-4 container">
       {displayHeading && (
@@ -44,7 +47,10 @@ const AboutUs = ({ displayHeading = true }: AboutUsProps) => {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
             <div className="order-2 lg:order-1 p-8">
               <div className="h-full flex flex-col justify-center space-y-4">
-                {introduction1.map((paragraph, index) => (
+                {(i18n.language == "ar"
+                  ? introduction1.ar
+                  : introduction1.en
+                ).map((paragraph, index) => (
                   <p
                     key={index}
                     className="text-gray-600 leading-relaxed text-base md:text-lg"
@@ -94,7 +100,10 @@ const AboutUs = ({ displayHeading = true }: AboutUsProps) => {
             </div>
             <div className="p-8">
               <div className="h-full flex flex-col justify-center space-y-4">
-                {introduction2.map((paragraph, index) => (
+                {(i18n.language == "ar"
+                  ? introduction2.ar
+                  : introduction2.en
+                ).map((paragraph, index) => (
                   <p
                     key={index}
                     className="text-gray-600 leading-relaxed text-base md:text-lg"
