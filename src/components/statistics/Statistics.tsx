@@ -11,8 +11,8 @@ import {
 const stats = [
   {
     icon: FaUsers,
-    number: "+100",
-    label: "موظف محترف",
+    number: "%97",
+    label: "نسبة الاحتفاظ بالعملاء",
   },  
   {
     icon: FaCheckCircle,
