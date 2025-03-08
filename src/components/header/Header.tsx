@@ -53,7 +53,7 @@ const Header = () => {
         <header className="container flex justify-between items-center max-w-full px-2 xs:px-8">
         <Link href={"/"}>
           <Image
-            className="w-full max-w-[280px] sm:max-w-full"
+            className="w-[320px] sm:max-w-full"
             src={"/assets/logos/hd-logo.jpeg"}
             alt="Integration Logo"
             width={300}

@@ -9,7 +9,7 @@ const Hero = () => {
   const { t } = useTranslation();
 
   return (
-    <section className="min-h-[calc(100vh-118px)] text-center text-white flex items-center justify-center flex-col">
+    <section className="min-h-[calc(100vh-98.33px)] text-center text-white flex items-center justify-center flex-col">
       <div className="absolute -z-50 inset-0">
         <Image
           src="/assets/home.webp"
