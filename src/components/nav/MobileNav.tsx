@@ -1,65 +1,62 @@
 "use client";
+
 import Link from "next/link";
-import { useState } from "react";
 import { navBarr } from "@/constants/navSections";
 import { usePathname } from "next/navigation";
+import { FaBars, FaTimes } from "react-icons/fa";
+import { useState } from "react";
+import { useTranslation } from "react-i18next";
 
 const MobileNav = () => {
-  const [isHidden, setIsHidden] = useState(true);
+  const [isOpen, setIsOpen] = useState(false);
   const pathname = usePathname();
+  const { t } = useTranslation();
+
+  const toggleMenu = () => {
+    setIsOpen(!isOpen);
+  };
 
   return (
-    <section className="lg:hidden">
-      <div
-        onClick={() => {
-          setIsHidden((prev) => !prev);
-          document.body.style.overflow = "hidden";
-        }}
-        className="cursor-pointer"
-        aria-label="burger menu - nav menu"
+    <div className="lg:hidden">
+      <button
+        onClick={toggleMenu}
+        className="text-2xl text-primary p-2"
+        aria-label="Toggle Menu"
       >
-        <span className="block bg-black w-7 h-[3px] my-1"></span>
-        <span className="block bg-black w-7 h-[3px] my-1"></span>
-        <span className="block bg-black w-7 h-[3px] my-1"></span>
-      </div>
+        {isOpen ? <FaTimes /> : <FaBars />}
+      </button>
 
-      <div
-        id="mobile-nav"
-        className="fixed top-0 left-0 w-full h-full bg-white z-[999]"
-        style={{
-          display: isHidden ? "none" : "block",
-        }}
+      <nav
+        className={`fixed inset-0 bg-white transform transition-transform duration-300 ease-in-out ${
+          isOpen ? "translate-x-0" : "translate-x-full"
+        } z-50`}
       >
-        <span
-          onClick={() => {
-            setIsHidden((prev) => !prev);
-            document.body.style.overflow = "auto";
-          }}
-          className="block absolute right-14 top-5 cursor-pointer text-gray-700 text-3xl hover:text-secondary"
-          aria-label="exit burger menu"
-        >
-          X
-        </span>
-        <nav aria-label="breadcrumb">
-          <ul className="h-screen text-center content-center text-3xl">
-            {navBarr.map((section, index) => (
-              <li
-                key={index}
-                onClick={() => {
-                  setIsHidden((prev) => !prev);
-                  document.body.style.overflow = "auto";
-                }}
-                className={`mx-4 pb-10 hover:text-secondary ${
-                  pathname == `/${section.url}` && "text-secondary font-bold"
-                }`}
-              >
-                <Link href={`/${section.url}`}>{section.section}</Link>
-              </li>
-            ))}
-          </ul>
-        </nav>
-      </div>
-    </section>
+        <div className="flex justify-between items-center p-4 border-b">
+          <button
+            onClick={toggleMenu}
+            className="text-2xl text-primary p-2"
+            aria-label="Close Menu"
+          >
+            <FaTimes />
+          </button>
+        </div>
+
+        <ul className="p-4 space-y-4">
+          {navBarr.map((section, index) => (
+            <li
+              key={index}
+              className={`hover:text-secondary ${
+                pathname === `/${section.url}` ? "text-secondary font-bold" : ""
+              }`}
+            >
+              <Link href={`/${section.url}`} onClick={toggleMenu}>
+                {t(`nav.${section.url}`)}
+              </Link>
+            </li>
+          ))}
+        </ul>
+      </nav>
+    </div>
   );
 };
 

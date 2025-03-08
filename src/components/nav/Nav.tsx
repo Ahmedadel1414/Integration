@@ -1,15 +1,16 @@
 "use client";
 
 import Link from "next/link";
-import { navBarr } from "@/constants/navSections";
 import { usePathname } from "next/navigation";
 import { FaAngleDown } from "react-icons/fa";
 import { useEffect, useRef, useState } from "react";
+import { useTranslation } from "react-i18next";
 
 const Nav = () => {
   const [sideNavBarr, setSideNavBar] = useState(false);
   const sideNavRef = useRef<HTMLLIElement>(null);
   const pathname = usePathname();
+  const { t } = useTranslation();
 
   useEffect(() => {
     const handleClickOutside = (event: MouseEvent) => {
@@ -31,22 +32,30 @@ const Nav = () => {
       aria-label="breadcrumb"
     >
       <ul className="flex justify-center gap-x-2 xl:gap-x-4">
-        {navBarr.slice(0, 6).map((section, index) => (
-          <li
-            key={index}
-            className={`hover:text-secondary ${
-              pathname === `/${section.url}` ? "text-secondary font-bold" : ""
-            }`}
-          >
-            <Link href={`/${section.url}`}>{section.section}</Link>
-          </li>
-        ))}
+        <li className={`hover:text-secondary ${pathname === "/" ? "text-secondary font-bold" : ""}`}>
+          <Link href="/">{t("nav.home")}</Link>
+        </li>
+        <li className={`hover:text-secondary ${pathname === "/about-us" ? "text-secondary font-bold" : ""}`}>
+          <Link href="/about-us">{t("nav.aboutUs")}</Link>
+        </li>
+        <li className={`hover:text-secondary ${pathname === "/our-services" ? "text-secondary font-bold" : ""}`}>
+          <Link href="/our-services">{t("nav.services")}</Link>
+        </li>
+        <li className={`hover:text-secondary ${pathname === "/vision-and-goals" ? "text-secondary font-bold" : ""}`}>
+          <Link href="/vision-and-goals">{t("nav.visionAndGoals")}</Link>
+        </li>
+        <li className={`hover:text-secondary ${pathname === "/privacy-policy" ? "text-secondary font-bold" : ""}`}>
+          <Link href="/privacy-policy">{t("nav.privacyPolicy")}</Link>
+        </li>
+        <li className={`hover:text-secondary ${pathname === "/contact-us" ? "text-secondary font-bold" : ""}`}>
+          <Link href="/contact-us">{t("nav.contactUs")}</Link>
+        </li>
         <li
           ref={sideNavRef}
           onClick={() => setSideNavBar((prev) => !prev)}
           className="relative hover:text-secondary cursor-pointer flex items-center gap-1"
         >
-          المزيد عنا
+          {t("nav.moreAboutUs")}
           <FaAngleDown
             className={`transition-transform duration-300 ${
               sideNavBarr ? "rotate-180" : "rotate-0"
@@ -55,7 +64,6 @@ const Nav = () => {
         </li>
       </ul>
 
-      {/* القائمة الجانبية المحسّنة */}
       <div
         className={`absolute top-12 -left-4 w-60 border border-gray-300 bg-white text-blue-900 text-center shadow-xl rounded-lg overflow-hidden transition-all duration-500 ease-in-out transform ${
           sideNavBarr
@@ -71,7 +79,7 @@ const Nav = () => {
                 : ""
             }`}
           >
-            <Link href="/workflow-steps">خطوات سير العمل</Link>
+            <Link href="/workflow-steps">{t("nav.workflowSteps")}</Link>
           </li>
           <li
             className={`hover:bg-blue-100 hover:text-secondary hover:font-bold py-2 rounded-md transition-all duration-200 ${
@@ -80,7 +88,7 @@ const Nav = () => {
                 : ""
             }`}
           >
-            <Link href="/foundations-and-principles">الأسس و المبادئ</Link>
+            <Link href="/foundations-and-principles">{t("nav.foundationsAndPrinciples")}</Link>
           </li>
           <li
             className={`hover:bg-blue-100 hover:text-secondary hover:font-bold py-2 rounded-md transition-all duration-200 ${
@@ -90,7 +98,7 @@ const Nav = () => {
             }`}
           >
             <Link href="/advantages-of-dealing-with-us">
-              مميزات التعامل معنا
+              {t("nav.advantagesOfDealingWithUs")}
             </Link>
           </li>
         </ul>

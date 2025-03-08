@@ -4,8 +4,11 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { sliderInfo } from "@/constants/ImagSliderInfo";
+import { useTranslation } from "react-i18next";
 
 const ImagSlider = () => {
+  const {t} = useTranslation();
+
   const settings = {
     dots: false,
     arrows: false,
@@ -43,7 +46,7 @@ const ImagSlider = () => {
   return (
     <section className="space-y-14 py-20">
       <div className="text-center">
-        <h2 className="text-4xl font-bold text-primary mb-4">شركاء النجاح</h2>
+        <h2 className="text-4xl font-bold text-primary mb-4">{t("partners.title")}</h2>
         <div className="w-24 h-1 bg-secondary mx-auto rounded-full"></div>
       </div>
 

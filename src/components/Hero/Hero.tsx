@@ -2,10 +2,12 @@
 
 import Image from "next/image";
 import Link from "next/link";
-
+import { useTranslation } from 'react-i18next';
 import { motion } from "motion/react";
 
 const Hero = () => {
+  const { t } = useTranslation();
+
   return (
     <section className="min-h-[calc(100vh-118px)] text-center text-white flex items-center justify-center flex-col">
       <div className="absolute -z-50 inset-0">
@@ -31,9 +33,9 @@ const Hero = () => {
             duration: 0.8,
             delay: 0.75,
           }}
-          className="text-4xl font-bold mb-6 max-w-[600px] sm:text-6xl !leading-snug"
+          className="text-4xl font-bold mb-6 max-w-[650px] mx-auto sm:text-6xl !leading-snug"
         >
-          حلول تأمينية موثوقة لحماية مستقبلك
+          {t('hero.title')}
         </motion.h1>
         <motion.p
           initial={{
@@ -48,7 +50,7 @@ const Hero = () => {
           }}
           className="text-2xl mb-6"
         >
-          نقدم خدمات وساطة تأمينية احترافية تلبي احتياجاتك و تحمي مصالحك
+          {t('hero.subtitle')}
         </motion.p>
       </div>
       <motion.div
@@ -67,13 +69,13 @@ const Hero = () => {
           className="inline-block bg-primary text-white px-11 py-3 rounded-md m-3 hover:bg-white hover:text-primary"
           href="/contact-us"
         >
-          تواصل معنا
+          {t('hero.contactUs')}
         </Link>
         <Link
           className="inline-block bg-white text-primary px-6 py-3 rounded-md m-3 hover:bg-primary hover:text-white"
           href="/our-services"
         >
-          استكشف خدماتنا
+          {t('hero.exploreServices')}
         </Link>
       </motion.div>
     </section>

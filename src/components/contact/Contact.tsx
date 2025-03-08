@@ -1,15 +1,22 @@
+"use client";
+
+import { useTranslation } from "react-i18next";
 import ContactForm from "./ContactForm";
 
-const Contact = () => {
+const Contact = ({ displayHeading }: { displayHeading?: boolean }) => {
+  const { t } = useTranslation();
+
   return (
     <section className="pt-10">
       <div className="container">
-        <div className="text-center">
-          <h2 className="text-4xl md:text-5xl font-bold text-primary mb-4">
-            تواصل معنا
-          </h2>
-          <div className="w-24 h-1 bg-secondary mx-auto rounded-full"></div>
-        </div>
+        {displayHeading && (
+          <div className="text-center">
+            <h2 className="text-4xl md:text-5xl font-bold text-primary mb-4">
+              {t("contact.title")}
+            </h2>
+            <div className="w-24 h-1 bg-secondary mx-auto rounded-full"></div>
+          </div>
+        )}
 
         <div className="flex flex-col gap-10 lg:flex-row mt-20 pb-10">
           <ContactForm />

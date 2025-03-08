@@ -2,13 +2,12 @@
 
 import Nav from "../nav/Nav";
 import MobileNav from "../nav/MobileNav";
-
 import Image from "next/image";
 import Link from "next/link";
-
 import { motion } from "motion/react";
 
 const Header = () => {
+
   return (
     <motion.header
       initial={{
@@ -21,10 +20,10 @@ const Header = () => {
         duration: 0.8,
         delay: 0.5,
       }}
+      dir="rtl"
       className="bg-white"
     >
       <div className="container flex justify-between items-center max-w-full px-2 xs:px-8">
-        {/* <Logo /> */}
         <Link href={"/"}>
           <Image
             className="w-full max-w-[280px] sm:max-w-full"

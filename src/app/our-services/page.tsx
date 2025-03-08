@@ -3,11 +3,13 @@
 import Link from "next/link";
 import Image from "next/image";
 import OurServices from "@/components/OurServices/OurServices";
-
 import { insuranceCategories } from "@/constants/insurance";
 import { motion } from "motion/react";
+import { useTranslation } from "react-i18next";
 
 const Page = () => {
+  const { t, i18n } = useTranslation();
+
   return (
     <section>
       <div className="relative -z-50 w-full bg-cover px-0 py-[150px]">
@@ -24,21 +26,17 @@ const Page = () => {
         <div className="bg-black w-full h-full top-0 left-0 absolute -z-40 opacity-40"></div>
         <div className="space-y-8">
           <h1 className="m-auto text-center text-4xl font-semibold pt-5 xs:text-5xl text-white">
-            الخدمات التي نقدمها
+            {t("services.title")}
           </h1>
           <div className="space-y-3">
-            <p className="m-auto text-center text-base font-medium sm:text-xl md:text-2xl text-white">
-              نقدم حلولًا تأمينية متكاملة مصممة لتلبية احتياجات عملائنا، مع ضمان
-              أعلى مستويات الجودة والموثوقية.
-            </p>
-            <p className="m-auto text-center text-base font-medium sm:text-xl md:text-2xl text-white">
-              نلتزم بتقديم خدمات مبتكرة تساعد عملاءنا على تحقيق الأمان المالي
-              والاستقرار، من خلال خبرتنا العميقة وفريقنا المتخصص.
-            </p>
-            <p className="m-auto text-center text-base font-medium sm:text-xl md:text-2xl text-white">
-              نسعى دائمًا إلى تطوير خدماتنا وفقًا لأحدث المعايير، لضمان توفير
-              أفضل الحلول التأمينية التي تلبي تطلعات عملائنا في السوق المصري.
-            </p>
+            {(t("services.description", { returnObjects: true }) as []).map((text, index) => (
+              <p
+                key={index}
+                className="m-auto text-center text-base font-medium sm:text-xl md:text-2xl text-white"
+              >
+                {text}
+              </p>
+            ))}
           </div>
         </div>
       </div>
@@ -49,7 +47,7 @@ const Page = () => {
         <div className="py-5 pt-10">
           <div className="text-center">
             <h2 className="text-2xl sm:text-3xl md:text-5xl font-bold text-primary mb-4">
-              التغطيات التأمينية التى تقدمها الشركة
+              {t("services.insuranceCoverage")}
             </h2>
             <div className="w-24 h-1 bg-secondary mx-auto rounded-full"></div>
           </div>
@@ -88,7 +86,7 @@ const Page = () => {
                 className="flex flex-col bg-white border-[4px] border-solid border-primary  shadow-lg shadow-zinc-300 overflow-hidden transition-none duration-500"
               >
                 <Image
-                  alt="Insurance Type"
+                  alt={insurance.insuranceTitle[i18n.language as "ar" | "en"]}
                   src={insurance.insuranceSrc}
                   width={500}
                   height={500}
@@ -96,10 +94,10 @@ const Page = () => {
                   loading="lazy"
                 />
                 <h3 className="mx-auto text-xl font-semibold py-5 text-center px-2">
-                  {insurance.insuranceTitle}
+                  {insurance.insuranceTitle[i18n.language as "ar" | "en"]}
                 </h3>
                 <p className="text-center pb-6 px-10 leading-7">
-                  {insurance.insuranceDescription}
+                  {insurance.insuranceDescription[i18n.language as "ar" | "en"]}
                 </p>
               </motion.div>
             ))}
@@ -111,7 +109,7 @@ const Page = () => {
             className="inline-block bg-primary text-white px-11 py-3 rounded-md m-auto hover:bg-opacity-80"
             href="/contact-us"
           >
-            اتصل بنا
+            {t("services.contactUs")}
           </Link>
         </div>
       </div>

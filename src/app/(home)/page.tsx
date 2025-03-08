@@ -3,7 +3,6 @@ import Hero from "@/components/Hero/Hero";
 import ImagSlider from "@/components/imagSlider/ImagSlider";
 import Statistics from "@/components/statistics/Statistics";
 import FAQ from "@/components/faq/FAQ";
-// import Testimonials from "@/components/testimonials/Testimonials";
 
 const Home = () => {
   return (
@@ -12,7 +11,7 @@ const Home = () => {
       <Statistics />
       <ImagSlider />
       <FAQ />
-      <Contact />
+      <Contact displayHeading />
     </>
   );
 };
