@@ -30,7 +30,7 @@ const Statistics = () => {
     },
     {
       icon: FaShieldAlt,
-      number: "95%",
+      number: "97%",
       label: t('statistics.customerSatisfaction'),
     },
   ];
