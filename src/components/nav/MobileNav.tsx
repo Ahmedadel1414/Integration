@@ -42,82 +42,82 @@ const MobileNav = () => {
 
         <ul className="p-4 space-y-4 content-center text-center h-3/4 text-2xl">
           
-        <li onClick={toggleMenu} className={`hover:bg-blue-100 hover:text-secondary hover:font-bold py-2 rounded-md transition-all duration-200 ${
-                  pathname === "/workflow-steps"
+        <li className={`hover:bg-blue-100 hover:text-secondary hover:font-bold py-2 rounded-md transition-all duration-200 ${
+                  pathname === "/"
                     ? "text-secondary font-bold bg-gray-100"
                     : ""
                 }`}>
-          <Link href="/">{t("nav.home")}</Link>
+          <Link onClick={toggleMenu} href="/">{t("nav.home")}</Link>
         </li>
-        <li onClick={toggleMenu} className={`hover:bg-blue-100 hover:text-secondary hover:font-bold py-2 rounded-md transition-all duration-200 ${
-                  pathname === "/workflow-steps"
+        <li className={`hover:bg-blue-100 hover:text-secondary hover:font-bold py-2 rounded-md transition-all duration-200 ${
+                  pathname === "/about-us"
                     ? "text-secondary font-bold bg-gray-100"
                     : ""
                 }`}>
-          <Link href="/about-us">{t("nav.aboutUs")}</Link>
-        </li>
-        <li
-        onClick={toggleMenu} className={`hover:bg-blue-100 hover:text-secondary hover:font-bold py-2 rounded-md transition-all duration-200 ${
-                  pathname === "/workflow-steps"
-                    ? "text-secondary font-bold bg-gray-100"
-                    : ""
-                }`}>
-          <Link href="/our-services">{t("nav.services")}</Link>
+          <Link onClick={toggleMenu} href="/about-us">{t("nav.aboutUs")}</Link>
         </li>
         <li
-        onClick={toggleMenu} className={`hover:bg-blue-100 hover:text-secondary hover:font-bold py-2 rounded-md transition-all duration-200 ${
-                  pathname === "/workflow-steps"
+         className={`hover:bg-blue-100 hover:text-secondary hover:font-bold py-2 rounded-md transition-all duration-200 ${
+                  pathname === "/our-services"
                     ? "text-secondary font-bold bg-gray-100"
                     : ""
                 }`}>
-          <Link href="/vision-and-goals">{t("nav.visionAndGoals")}</Link>
+          <Link onClick={toggleMenu} href="/our-services">{t("nav.services")}</Link>
         </li>
         <li
-        onClick={toggleMenu} className={`hover:bg-blue-100 hover:text-secondary hover:font-bold py-2 rounded-md transition-all duration-200 ${
-                  pathname === "/workflow-steps"
+         className={`hover:bg-blue-100 hover:text-secondary hover:font-bold py-2 rounded-md transition-all duration-200 ${
+                  pathname === "/vision-and-goals"
                     ? "text-secondary font-bold bg-gray-100"
                     : ""
                 }`}>
-          <Link href="/privacy-policy">{t("nav.privacyPolicy")}</Link>
+          <Link onClick={toggleMenu} href="/vision-and-goals">{t("nav.visionAndGoals")}</Link>
         </li>
         <li
-        onClick={toggleMenu} className={`hover:bg-blue-100 hover:text-secondary hover:font-bold py-2 rounded-md transition-all duration-200 ${
-                  pathname === "/workflow-steps"
+         className={`hover:bg-blue-100 hover:text-secondary hover:font-bold py-2 rounded-md transition-all duration-200 ${
+                  pathname === "/privacy-policy"
                     ? "text-secondary font-bold bg-gray-100"
                     : ""
                 }`}>
-          <Link href="/contact-us">{t("nav.contactUs")}</Link>
+          <Link onClick={toggleMenu} href="/privacy-policy">{t("nav.privacyPolicy")}</Link>
+        </li>
+        <li
+         className={`hover:bg-blue-100 hover:text-secondary hover:font-bold py-2 rounded-md transition-all duration-200 ${
+                  pathname === "/contact-us"
+                    ? "text-secondary font-bold bg-gray-100"
+                    : ""
+                }`}>
+          <Link onClick={toggleMenu} href="/contact-us">{t("nav.contactUs")}</Link>
         </li>
 
         <li
-        onClick={toggleMenu}
+        
                 className={`hover:bg-blue-100 hover:text-secondary hover:font-bold py-2 rounded-md transition-all duration-200 ${
                   pathname === "/workflow-steps"
                     ? "text-secondary font-bold bg-gray-100"
                     : ""
                 }`}
               >
-                <Link href="/workflow-steps">{t("nav.workflowSteps")}</Link>
+                <Link onClick={toggleMenu} href="/workflow-steps">{t("nav.workflowSteps")}</Link>
               </li>
               <li
-              onClick={toggleMenu}
+              
                 className={`hover:bg-blue-100 hover:text-secondary hover:font-bold py-2 rounded-md transition-all duration-200 ${
                   pathname === "/foundations-and-principles"
                     ? "text-secondary font-bold bg-gray-100"
                     : ""
                 }`}
               >
-                <Link href="/foundations-and-principles">{t("nav.foundationsAndPrinciples")}</Link>
+                <Link onClick={toggleMenu} href="/foundations-and-principles">{t("nav.foundationsAndPrinciples")}</Link>
               </li>
               <li
-              onClick={toggleMenu}
+              
                 className={`hover:bg-blue-100 hover:text-secondary hover:font-bold py-2 rounded-md transition-all duration-200 ${
                   pathname === "/advantages-of-dealing-with-us"
                     ? "text-secondary font-bold bg-gray-100"
                     : ""
                 }`}
               >
-                <Link href="/advantages-of-dealing-with-us">
+                <Link onClick={toggleMenu} href="/advantages-of-dealing-with-us">
                   {t("nav.advantagesOfDealingWithUs")}
                 </Link>
               </li>
