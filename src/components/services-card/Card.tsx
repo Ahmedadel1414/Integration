@@ -1,4 +1,5 @@
 import { IconType } from "react-icons";
+import i18next from "i18next";
 
 type CardProps = {
   CardIcon: IconType;
@@ -13,8 +14,10 @@ const Card = ({
   cardParagraph,
   cardParagraph2,
 }: CardProps) => {
+  const lang = i18next.language
   return (
-    <div className="text-center bg-white h-[27rem] border-[4px] border-solid border-primary p-10 shadow-lg shadow-zinc-300 transition-all duration-500 hover:-translate-y-5">
+    <div className={`text-center bg-white border-[4px] border-solid border-primary p-10 shadow-lg shadow-zinc-300 transition-all duration-500 hover:-translate-y-5
+    ${lang === "en"? "h-[26rem]":"h-[23rem]"}`}>
       <div className="text-5xl text-center text-secondary">
         {<CardIcon className="mx-auto" />}
       </div>
