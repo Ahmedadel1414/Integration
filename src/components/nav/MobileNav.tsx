@@ -19,7 +19,7 @@ const MobileNav = () => {
     <div className="lg:hidden">
       <button
         onClick={toggleMenu}
-        className="text-2xl text-primary p-2"
+        className="text-3xl text-primary p-2"
         aria-label="Toggle Menu"
       >
         {isOpen ? <FaTimes /> : <FaBars />}
@@ -42,42 +42,46 @@ const MobileNav = () => {
 
         <ul className="p-4 space-y-4 content-center text-center h-3/4 text-2xl">
           
-        <li className={`hover:bg-blue-100 hover:text-secondary hover:font-bold py-2 rounded-md transition-all duration-200 ${
+        <li onClick={toggleMenu} className={`hover:bg-blue-100 hover:text-secondary hover:font-bold py-2 rounded-md transition-all duration-200 ${
                   pathname === "/workflow-steps"
                     ? "text-secondary font-bold bg-gray-100"
                     : ""
                 }`}>
           <Link href="/">{t("nav.home")}</Link>
         </li>
-        <li className={`hover:bg-blue-100 hover:text-secondary hover:font-bold py-2 rounded-md transition-all duration-200 ${
+        <li onClick={toggleMenu} className={`hover:bg-blue-100 hover:text-secondary hover:font-bold py-2 rounded-md transition-all duration-200 ${
                   pathname === "/workflow-steps"
                     ? "text-secondary font-bold bg-gray-100"
                     : ""
                 }`}>
           <Link href="/about-us">{t("nav.aboutUs")}</Link>
         </li>
-        <li className={`hover:bg-blue-100 hover:text-secondary hover:font-bold py-2 rounded-md transition-all duration-200 ${
+        <li
+        onClick={toggleMenu} className={`hover:bg-blue-100 hover:text-secondary hover:font-bold py-2 rounded-md transition-all duration-200 ${
                   pathname === "/workflow-steps"
                     ? "text-secondary font-bold bg-gray-100"
                     : ""
                 }`}>
           <Link href="/our-services">{t("nav.services")}</Link>
         </li>
-        <li className={`hover:bg-blue-100 hover:text-secondary hover:font-bold py-2 rounded-md transition-all duration-200 ${
+        <li
+        onClick={toggleMenu} className={`hover:bg-blue-100 hover:text-secondary hover:font-bold py-2 rounded-md transition-all duration-200 ${
                   pathname === "/workflow-steps"
                     ? "text-secondary font-bold bg-gray-100"
                     : ""
                 }`}>
           <Link href="/vision-and-goals">{t("nav.visionAndGoals")}</Link>
         </li>
-        <li className={`hover:bg-blue-100 hover:text-secondary hover:font-bold py-2 rounded-md transition-all duration-200 ${
+        <li
+        onClick={toggleMenu} className={`hover:bg-blue-100 hover:text-secondary hover:font-bold py-2 rounded-md transition-all duration-200 ${
                   pathname === "/workflow-steps"
                     ? "text-secondary font-bold bg-gray-100"
                     : ""
                 }`}>
           <Link href="/privacy-policy">{t("nav.privacyPolicy")}</Link>
         </li>
-        <li className={`hover:bg-blue-100 hover:text-secondary hover:font-bold py-2 rounded-md transition-all duration-200 ${
+        <li
+        onClick={toggleMenu} className={`hover:bg-blue-100 hover:text-secondary hover:font-bold py-2 rounded-md transition-all duration-200 ${
                   pathname === "/workflow-steps"
                     ? "text-secondary font-bold bg-gray-100"
                     : ""
@@ -86,6 +90,7 @@ const MobileNav = () => {
         </li>
 
         <li
+        onClick={toggleMenu}
                 className={`hover:bg-blue-100 hover:text-secondary hover:font-bold py-2 rounded-md transition-all duration-200 ${
                   pathname === "/workflow-steps"
                     ? "text-secondary font-bold bg-gray-100"
@@ -95,6 +100,7 @@ const MobileNav = () => {
                 <Link href="/workflow-steps">{t("nav.workflowSteps")}</Link>
               </li>
               <li
+              onClick={toggleMenu}
                 className={`hover:bg-blue-100 hover:text-secondary hover:font-bold py-2 rounded-md transition-all duration-200 ${
                   pathname === "/foundations-and-principles"
                     ? "text-secondary font-bold bg-gray-100"
@@ -104,6 +110,7 @@ const MobileNav = () => {
                 <Link href="/foundations-and-principles">{t("nav.foundationsAndPrinciples")}</Link>
               </li>
               <li
+              onClick={toggleMenu}
                 className={`hover:bg-blue-100 hover:text-secondary hover:font-bold py-2 rounded-md transition-all duration-200 ${
                   pathname === "/advantages-of-dealing-with-us"
                     ? "text-secondary font-bold bg-gray-100"
