@@ -15,7 +15,7 @@ const Statistics = () => {
   const stats = [
     {
       icon: FaUsers,
-      number: "%97",
+      number: "97%",
       label: t('statistics.customerRetention'),
     },  
     {
