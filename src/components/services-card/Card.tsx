@@ -17,7 +17,7 @@ const Card = ({
   const lang = i18next.language
   return (
     <div className={`text-center bg-white border-[4px] border-solid border-primary p-10 shadow-lg shadow-zinc-300 transition-all duration-500 hover:-translate-y-5
-    ${lang === "en"? "h-[26rem]":"h-[23rem]"}`}>
+    ${lang === "en"? "h-[45rem] xs:h-[28rem]":"h-[38rem] xs:h-[24rem]"}`}>
       <div className="text-5xl text-center text-secondary">
         {<CardIcon className="mx-auto" />}
       </div>
