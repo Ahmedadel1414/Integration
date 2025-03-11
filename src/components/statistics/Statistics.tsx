@@ -4,7 +4,6 @@ import { motion } from "framer-motion";
 import { useTranslation } from 'react-i18next';
 import {
   FaUsers,
-  FaCheckCircle,
   FaBuilding,
   FaShieldAlt,
 } from "react-icons/fa";
@@ -19,13 +18,8 @@ const Statistics = () => {
       label: t('statistics.customerRetention'),
     },  
     {
-      icon: FaCheckCircle,
-      number: "5+",
-      label: t('statistics.yearsExperience'),
-    },
-    {
       icon: FaBuilding,
-      number: "50+",
+      number: t('statistics.numbers'),
       label: t('statistics.partnerCompanies'),
     },
     {
@@ -51,7 +45,7 @@ const Statistics = () => {
           <div className="w-24 h-1 bg-secondary mx-auto rounded-full"></div>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mt-16">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-16">
           {stats.map((stat, index) => (
             <motion.div
               key={index}
